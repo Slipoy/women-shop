@@ -1,0 +1,100 @@
+.banner {
+  display: flex;
+  align-items: flex-end;
+  width: 1370px;
+  height: 826px;
+}
+.banner .slider {
+  background: transparent;
+  width: 50%;
+  height: 100%;
+}
+.banner .slider .sliderPromo {
+  width: 80%;
+  margin: 100px auto 0;
+}
+.banner .slider .sliderPromo .catalogBtn {
+  margin-top: 30px;
+  width: 193px;
+  height: 193px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #514A7E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner .slider .sliderPromo .catalogBtn span {
+  color: #514A7E;
+  margin-left: 50px;
+}
+.banner .slider .sliderPromo .catalogBtn .arrow {
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+}
+.banner .slider .sliderPromo .catalogBtn .arrow .triangleRight {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid #514A7E;
+}
+.banner .slider .sliderPromo .catalogBtn .arrow .line {
+  width: 70px;
+  border-bottom: 1px solid #514A7E;
+}
+.banner .slider .sliderPromo .catalogBtn:hover {
+  background-color: #514A7E;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.banner .slider .sliderPromo .catalogBtn:hover span {
+  color: white;
+}
+.banner .slider .sliderPromo .catalogBtn:hover .line {
+  border-bottom: 1px solid white;
+}
+.banner .slider .sliderPromo .catalogBtn:hover .triangleRight {
+  border-left: 10px solid white;
+}
+.banner .slider h1 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 60.5px;
+  margin-bottom: 30px;
+}
+.banner .slider h1 .nameShop {
+  font-family: "Bad Script", cursive;
+  color: #514A7E;
+}
+.banner .slider p {
+  width: 385px;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: right;
+  letter-spacing: 0.02em;
+}
+
+.leftBan {
+  z-index: 1;
+  text-align: center;
+  background-color: #514A7E;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.leftBan .mainImg {
+  margin: 20% 25% 0 0;
+}
+.leftBan .firstImg {
+  position: absolute;
+  bottom: 40%;
+  left: 55%;
+}
+.leftBan .secondImg {
+  position: absolute;
+  bottom: 0%;
+  left: -13%;
+}
+
+/*# sourceMappingURL=baner.module.css.map */

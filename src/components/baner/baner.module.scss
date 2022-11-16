@@ -1,0 +1,100 @@
+.banner{
+  display: flex;
+  align-items: flex-end;
+  width: 1370px;
+  height: 826px;
+  .slider{
+    background:transparent;
+    width: 50%;
+    height: 100%;
+    .sliderPromo{
+      width: 80%;
+      margin: 100px auto 0;
+      .catalogBtn{
+        margin-top: 30px;
+        width: 193px;
+        height: 193px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid #514A7E;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        span{
+          color:#514A7E;
+          margin-left: 50px;
+          }
+        .arrow{
+          margin-left: 70px;
+          display: flex;
+          align-items: center;
+          .triangleRight{
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-left: 10px solid #514A7E;
+          }
+          .line{
+            width: 70px;
+            border-bottom: 1px solid #514A7E;
+          }
+        }
+        &:hover{
+          background-color:#514A7E;
+          box-shadow: 0 0 10px rgba(0,0,0,0.5);
+          span{
+            color:#ffff
+          }
+          .line{
+            border-bottom: 1px solid #ffff;
+          }
+          .triangleRight{
+            border-left: 10px solid #ffff;
+          }
+
+        }
+      }
+    }
+      h1{
+        font-size: 55px;
+        font-weight: 500;
+        line-height: 60.5px;
+        margin-bottom: 30px;
+        .nameShop{
+          font-family: 'Bad Script', cursive;
+          color: #514A7E;
+        }
+      }
+      p{
+        width: 385px;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: right;
+        letter-spacing: 0.02em;
+      }
+
+    }
+  }
+  .leftBan{
+    z-index: 1;
+    text-align: center;
+    background-color: #514A7E;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    .mainImg{
+      margin: 20% 25% 0 0;
+    }
+    .firstImg{
+      position: absolute;
+      bottom: 40%;
+      left: 55%;
+
+    }
+    .secondImg{
+      position: absolute;
+      bottom: 0%;
+      left: -13%;
+    }
+  }
