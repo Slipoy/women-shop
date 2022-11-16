@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Slipoy/women-shop/static/css/main.ed57639f.css",
+    "main.js": "/Slipoy/women-shop/static/js/main.5c1426af.js",
+    "static/media/main1.png": "/Slipoy/women-shop/static/media/main1.9f84b82d36616a53f0e8.png",
+    "static/media/Rectangle 22 (1).png": "/Slipoy/women-shop/static/media/Rectangle 22 (1).de8942a6081bf4bd882b.png",
+    "static/media/main3.png": "/Slipoy/women-shop/static/media/main3.4a68195f73ff4e34a186.png",
+    "static/media/main2.png": "/Slipoy/women-shop/static/media/main2.7464279f3002a00d2049.png",
+    "static/media/icon-searcр.png": "/Slipoy/women-shop/static/media/icon-searcр.6b3bac6508bb3fb19402.png",
+    "static/media/slick.svg": "/Slipoy/women-shop/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Slipoy/women-shop/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Slipoy/women-shop/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Slipoy/women-shop/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Slipoy/women-shop/index.html",
+    "main.ed57639f.css.map": "/Slipoy/women-shop/static/css/main.ed57639f.css.map",
+    "main.5c1426af.js.map": "/Slipoy/women-shop/static/js/main.5c1426af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed57639f.css",
+    "static/js/main.5c1426af.js"
+  ]
+}
