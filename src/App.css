@@ -3,15 +3,21 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+body{
+    background: radial-gradient(100% 171.87% at 0% 50.24%, rgba(183, 224, 249, 0.2) 0%, rgba(232, 178, 239, 0.2) 100%);
+}
 .App{
     width: 1440px;
     margin: 0 auto;
     position: relative;
+    background: white;
+
 }
 main{
     width: 1170px;
     margin: 0 auto;
     position: relative;
+
 }
 .semicircle{
     width: 200px;
@@ -20,5 +26,5 @@ main{
     border-left:2px solid #514A7E;
     position: absolute;
     top:70%;
-    left: 105%;
+    left: 103%;
 }
