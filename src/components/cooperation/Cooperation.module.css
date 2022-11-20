@@ -1,0 +1,51 @@
+.cooperation {
+  width: 100%;
+}
+.cooperation .cooperationDescription {
+  font-size: 16px;
+  width: 100%;
+}
+.cooperation .offers {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cooperation .offers .offerItem {
+  text-align: center;
+  width: 20%;
+}
+.cooperation .offers .offerItem p {
+  font-size: 12px;
+}
+.cooperation .benefits {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+.cooperation .benefits .benefitsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cooperation .benefits .benefitsItem img {
+  width: 27px;
+  height: 27px;
+  margin-bottom: 25px;
+}
+.cooperation .benefits .benefitsItem span {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+h3 {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 50%;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=Cooperation.module.css.map */

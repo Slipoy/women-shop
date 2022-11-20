@@ -1,0 +1,42 @@
+.questionsHeader:after {
+  content: "FAQ";
+  top: 80%;
+  left: 48%;
+}
+
+.sectionQuestions .questions {
+  position: relative;
+  margin-bottom: 30px;
+}
+.sectionQuestions .questions .answer {
+  display: none;
+  overflow: hidden;
+}
+.sectionQuestions .questions:active .answer {
+  display: inline-block;
+}
+.sectionQuestions .questions p {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23.44px;
+}
+.sectionQuestions .questions p:after {
+  content: "";
+  position: absolute;
+  top: 125%;
+  left: 0;
+  width: 100%;
+  border-bottom: 0.5px solid #7D7D7D;
+}
+.sectionQuestions .questions span {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  color: #514a7e;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=questions.module.css.map */

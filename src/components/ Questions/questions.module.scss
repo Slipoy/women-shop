@@ -1,0 +1,49 @@
+.questionsHeader{
+  &:after{
+    content: 'FAQ';
+    top: 80%;
+    left: 48%;
+  }
+
+}
+.sectionQuestions{
+  .questions{
+    //display: flex;
+    //justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+
+    .answer{
+      display: none;
+      overflow: hidden;
+    }
+    &:active{
+      .answer{
+        display: inline-block;
+      }
+    }
+    p{
+      display: inline-block;
+      width: 50%;
+      text-align: left;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23.44px;
+      &:after{
+        content: "";
+        position: absolute;
+        top:125%;
+        left: 0;
+        width: 100%;
+        border-bottom: 0.5px solid #7D7D7D;
+      }
+    }
+    span{
+      display: inline-block;
+      width: 50%;
+      text-align: right;
+      color: #514a7e;
+      font-size: 20px;
+    }
+  }
+}

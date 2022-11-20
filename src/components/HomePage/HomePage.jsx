@@ -2,11 +2,27 @@ import React from "react";
 import Banner from "../baner/Baner";
 import style from   './homePage.module.css'
 import Item from "../Item/item";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Reviews from "../Reviews/reviews";
+import Questions from "../ Questions/questions";
+import Cooperation from "../cooperation/cooperation";
+import FormInvitation from "../FormInvitation/formInvitation";
+import Footer from "../footer/footer";
 
 
 
 
 const HomePage = ()=>{
+    const settings = {
+        autoplay: false,
+        autoplaySpeed: 1000,
+        arrows: true,
+
+        slidesToShow: 4,
+        slidesToScroll: 4
+    }
     return(
         <>
             <Banner/>
@@ -24,13 +40,21 @@ const HomePage = ()=>{
             <section className={style.stock}>
                 <h2 className={style.stockHeader}>Успей купить!</h2>
                 <div className={style.stockItems}>
-                    <Item/>
-                    <Item/>
-                    <Item/>
-                    <Item/>
+                    <Slider {...settings}>
+                        <Item/>
+                        <Item/>
+                        <Item/>
+                        <Item/>
+                        <Item/>
+                        <Item/>
+                    </Slider>
                 </div>
 
             </section>
+            <Reviews/>
+            <Questions/>
+            <Cooperation/>
+
         </>
 
 

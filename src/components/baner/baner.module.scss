@@ -24,22 +24,7 @@
           color:#514A7E;
           margin-left: 50px;
           }
-        .arrow{
-          margin-left: 70px;
-          display: flex;
-          align-items: center;
-          .triangleRight{
-            width: 0;
-            height: 0;
-            border-top: 7px solid transparent;
-            border-bottom: 7px solid transparent;
-            border-left: 10px solid #514A7E;
-          }
-          .line{
-            width: 70px;
-            border-bottom: 1px solid #514A7E;
-          }
-        }
+
         &:hover{
           background-color:#514A7E;
           box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -98,3 +83,20 @@
       left: -13%;
     }
   }
+
+.arrow{
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+  .triangleRight{
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid #514A7E;
+  }
+  .line{
+    width: 70px;
+    border-bottom: 1px solid #514A7E;
+  }
+}

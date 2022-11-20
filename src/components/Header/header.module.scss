@@ -8,60 +8,99 @@ header{
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    .mainMenu{
+      height: 100%;
+      position: relative;
+      .mainMenuBtn {
+        cursor: pointer;
+        height: 100%;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0;
+        .lineBtn {
+          width: 30px;
+          border-bottom: 2px solid #121212;
+        }
+      }
+      .catalogMenu{
+        background-color: #121212;
+        width: 278px;
+        height: 855px;
+        display: none;
+        position: absolute;
+        top:0;
+        left: 0;
+        img {
+          width:118px;
+          height: 118px;
+        }
+        .listItems{
+          ul{
+            margin-left: 20px;
+            li{
+              list-style-type: none;
+              color:#FFFDF5 ;
+              font-size: 14px;
+              font-weight: 300;
+              margin-bottom: 10px;
+              cursor: pointer
+            }
+          }
+        }
+      }
+      &:hover{
+        .catalogMenu{
+          display: inline-block;
+        }
 
-    .mainMenuBtn {
-      border: none;
-      background-color: transparent;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      padding: 0;
-
-      .lineBtn {
-        width: 30px;
-        border-bottom: 2px solid #121212;
       }
     }
+
+
 
     .rightMenu {
       display: flex;
       align-items: center;
-      .searchInput {
-        display: flex;
-        align-items: center;
-        span{
-          img{
-            width: 15px;
-            height: 15px;
-          }
-        }
-
-        input{
-          border:none;
-          background-color: transparent;
-          border-bottom: 0.5px solid #7D7D7D;
-          font-size: 12px;
-          color: #7D7D7D;
-          width: 300px;
-          margin-left: 5px;
-          outline:none;
-        }
-
-      }
       .menuBtn {
         margin-left: 10px;
-        .basketBtn {
-          background:none;
-          width: 16px;
-          border: none;
-          margin-left: 20px;
 
-          img {
-            width: 100%;
-          }
-        }
       }
     }
+  }
+}
+.searchInput {
+  display: flex;
+  align-items: center;
+  span{
+    img{
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  input{
+    border:none;
+    background-color: transparent;
+    border-bottom: 0.5px solid #7D7D7D;
+    font-size: 12px;
+    color: #7D7D7D;
+    width: 300px;
+    margin-left: 5px;
+    outline:none;
+  }
+
+}
+.basketBtn {
+  background:none;
+  width: 16px;
+  border: none;
+  margin-left: 20px;
+
+  img {
+    width: 100%;
   }
 }
 

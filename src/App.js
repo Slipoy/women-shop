@@ -3,6 +3,9 @@ import './App.css'
 import Header from "./components/Header/Header";
 import HomePage from "./components/HomePage/HomePage";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import FormInvitation from "./components/FormInvitation/formInvitation";
+import Footer from "./components/footer/footer";
+
 
 function App() {
   return (
@@ -13,6 +16,8 @@ function App() {
                   <HomePage/>
                   <div className="semicircle"></div>
               </main>
+              <FormInvitation/>
+              <Footer/>
           </div>
       </BrowserRouter>
 

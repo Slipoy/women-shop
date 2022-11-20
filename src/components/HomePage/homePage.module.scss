@@ -14,10 +14,7 @@
       width: 25%;
       padding-right: 100px;
       margin-bottom: 100px;
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 16.52px;
-      color: #7D7D7D;
+
     }
     p:nth-child(4) {
       padding-left: 10px;
@@ -62,7 +59,8 @@ h2 {
   position: relative;
 }
 
-.stock{
+
+
   .stockHeader{
     &:after{
       content: 'Акции';
@@ -77,10 +75,8 @@ h2 {
     }
   }
   .stockItems{
-    border: 1px solid black;
     width: 1304px;
-    display: flex;
   }
-}
+
 
 

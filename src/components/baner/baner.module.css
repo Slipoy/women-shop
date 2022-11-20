@@ -28,22 +28,6 @@
   color: #514A7E;
   margin-left: 50px;
 }
-.banner .slider .sliderPromo .catalogBtn .arrow {
-  margin-left: 70px;
-  display: flex;
-  align-items: center;
-}
-.banner .slider .sliderPromo .catalogBtn .arrow .triangleRight {
-  width: 0;
-  height: 0;
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
-  border-left: 10px solid #514A7E;
-}
-.banner .slider .sliderPromo .catalogBtn .arrow .line {
-  width: 70px;
-  border-bottom: 1px solid #514A7E;
-}
 .banner .slider .sliderPromo .catalogBtn:hover {
   background-color: #514A7E;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -95,6 +79,23 @@
   position: absolute;
   bottom: 0%;
   left: -13%;
+}
+
+.arrow {
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+}
+.arrow .triangleRight {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid #514A7E;
+}
+.arrow .line {
+  width: 70px;
+  border-bottom: 1px solid #514A7E;
 }
 
 /*# sourceMappingURL=baner.module.css.map */

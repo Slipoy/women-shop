@@ -10,7 +10,7 @@ import helloLogo from "../../assets/baner/Rectangle 22 (1).png"
 
 const Banner =()=>{
     const settings = {
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         arrows: true,
         slidesToShow: 1,
