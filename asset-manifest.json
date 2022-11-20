@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/women-shop/static/css/main.971838e6.css",
-    "main.js": "/women-shop/static/js/main.79b3a2e3.js",
+    "main.css": "/women-shop/static/css/main.ff1b449b.css",
+    "main.js": "/women-shop/static/js/main.2f9075df.js",
     "static/media/main1.png": "/women-shop/static/media/main1.9f84b82d36616a53f0e8.png",
-    "static/media/Rectangle 23.png": "/women-shop/static/media/Rectangle 23.46922d0243e789e878ed.png",
     "static/media/Rectangle 22 (1).png": "/women-shop/static/media/Rectangle 22 (1).de8942a6081bf4bd882b.png",
     "static/media/main3.png": "/women-shop/static/media/main3.4a68195f73ff4e34a186.png",
+    "static/media/Rectangle 24.png": "/women-shop/static/media/Rectangle 24.4470e0e5bd42d5b025ac.png",
     "static/media/main2.png": "/women-shop/static/media/main2.7464279f3002a00d2049.png",
+    "static/media/Ellipse 8.png": "/women-shop/static/media/Ellipse 8.3f2668fdc1f2e93b8a41.png",
     "static/media/icon-searcр.png": "/women-shop/static/media/icon-searcр.6b3bac6508bb3fb19402.png",
     "static/media/slick.svg": "/women-shop/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/women-shop/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/women-shop/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/women-shop/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/women-shop/index.html",
-    "main.971838e6.css.map": "/women-shop/static/css/main.971838e6.css.map",
-    "main.79b3a2e3.js.map": "/women-shop/static/js/main.79b3a2e3.js.map"
+    "main.ff1b449b.css.map": "/women-shop/static/css/main.ff1b449b.css.map",
+    "main.2f9075df.js.map": "/women-shop/static/js/main.2f9075df.js.map"
   },
   "entrypoints": [
-    "static/css/main.971838e6.css",
-    "static/js/main.79b3a2e3.js"
+    "static/css/main.ff1b449b.css",
+    "static/js/main.2f9075df.js"
   ]
 }
