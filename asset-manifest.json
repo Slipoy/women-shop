@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/women-shop/static/css/main.ff1b449b.css",
-    "main.js": "/women-shop/static/js/main.9e57d204.js",
+    "main.css": "/women-shop/static/css/main.248d0976.css",
+    "main.js": "/women-shop/static/js/main.ba221528.js",
     "static/media/main1.png": "/women-shop/static/media/main1.9f84b82d36616a53f0e8.png",
     "static/media/Rectangle 22 (1).png": "/women-shop/static/media/Rectangle 22 (1).de8942a6081bf4bd882b.png",
     "static/media/main3.png": "/women-shop/static/media/main3.4a68195f73ff4e34a186.png",
@@ -14,11 +14,11 @@
     "static/media/slick.ttf": "/women-shop/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/women-shop/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/women-shop/index.html",
-    "main.ff1b449b.css.map": "/women-shop/static/css/main.ff1b449b.css.map",
-    "main.9e57d204.js.map": "/women-shop/static/js/main.9e57d204.js.map"
+    "main.248d0976.css.map": "/women-shop/static/css/main.248d0976.css.map",
+    "main.ba221528.js.map": "/women-shop/static/js/main.ba221528.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff1b449b.css",
-    "static/js/main.9e57d204.js"
+    "static/css/main.248d0976.css",
+    "static/js/main.ba221528.js"
   ]
 }
