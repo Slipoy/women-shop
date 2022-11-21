@@ -38,15 +38,18 @@ header{
           height: 118px;
         }
         .listItems{
-          ul{
+          .listItem{
+            display: flex;
+            flex-direction: column;
             margin-left: 20px;
-            li{
+            .categoriesName{
+              text-decoration: none;
               list-style-type: none;
               color:#FFFDF5 ;
               font-size: 14px;
               font-weight: 300;
               margin-bottom: 10px;
-              cursor: pointer
+              cursor: pointer;
             }
           }
         }
@@ -58,9 +61,6 @@ header{
 
       }
     }
-
-
-
     .rightMenu {
       display: flex;
       align-items: center;

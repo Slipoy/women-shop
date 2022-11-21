@@ -5,22 +5,23 @@ import HomePage from "./components/HomePage/HomePage";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import FormInvitation from "./components/FormInvitation/formInvitation";
 import Footer from "./components/footer/footer";
+import Catalog from "./components/Catalog/Catalog";
 
 
 function App() {
   return (
-      <BrowserRouter>
           <div className="App">
               <main>
                   <Header/>
-                  <HomePage/>
-                  <div className="semicircle"></div>
+                  <Routes>
+                      <Route path='women-shop/' element={<HomePage/>}/>
+                      <Route path='women-shop/*' element={<Catalog/>}/>
+                  </Routes>
+
               </main>
               <FormInvitation/>
               <Footer/>
           </div>
-      </BrowserRouter>
-
   );
 }
 
