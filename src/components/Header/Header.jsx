@@ -5,6 +5,7 @@ import favritesLogo from  '../../assets/header/favorites.png'
 import userLogo from '../../assets/header/icon.png'
 import searchLogo from "../../assets/header/icon-searcр.png"
 import logo from '../../assets/header/logo.png'
+import Catalogmenu from "../catalogMenu/catalogmenu";
 
 
 
@@ -20,22 +21,7 @@ const Header = ()=>{
                         <span className={style.lineBtn}></span>
                         <span className={style.lineBtn}></span>
                     </button>
-                    <div className={style.catalogMenu}>
-                        <img src={logo} alt=""/>
-                        <div className={style.listItems}>
-                            <ul>
-                                <li>Женщинам</li>
-                                <li>Мужчинам</li>
-                                <li>Детям</li>
-                                <li>Обувь</li>
-                                <li>Игрушки</li>
-                                <li>Аксессуары</li>
-                                <li>Большие размеры</li>
-                                <li>Дополнительно</li>
-                                <li>Акции</li>
-                            </ul>
-                        </div>
-                    </div>
+                   <Catalogmenu/>
                 </div>
 
                 <div className={style.rightMenu}>
