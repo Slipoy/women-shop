@@ -17,7 +17,6 @@ function App() {
                       <Route path='women-shop/' element={<HomePage/>}/>
                       <Route path='women-shop/*' element={<Catalog/>}/>
                   </Routes>
-
               </main>
               <FormInvitation/>
               <Footer/>

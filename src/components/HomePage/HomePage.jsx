@@ -10,11 +10,15 @@ import Questions from "../ Questions/questions";
 import Cooperation from "../cooperation/cooperation";
 import FormInvitation from "../FormInvitation/formInvitation";
 import Footer from "../footer/footer";
+import usePageData from "../../HOk/usePageData";
+import item from "../Item/item";
 
 
 
 
 const HomePage = ()=>{
+    const stockItems = usePageData("stock")
+    console.log(stockItems)
     const settings = {
         autoplay: false,
         autoplaySpeed: 1000,
@@ -41,12 +45,7 @@ const HomePage = ()=>{
                 <h2 className={style.stockHeader}>Успей купить!</h2>
                 <div className={style.stockItems}>
                     <Slider {...settings}>
-                        <Item/>
-                        <Item/>
-                        <Item/>
-                        <Item/>
-                        <Item/>
-                        <Item/>
+                        {stockItems ? stockItems.data.map(item=>{return <Item {...item}/>}): <h3>нет тооваров</h3> }
                     </Slider>
                 </div>
 

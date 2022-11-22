@@ -9,16 +9,16 @@ import favritesLogo from  '../../assets/header/favorites.png'
 
 
 
-const Item = ()=>{
+const Item = ({price, description})=>{
     return(
             <div className={style.item}>
                 <img className={style.imgItem} src={item} alt=""/>
                 <div className={style.itemPrice}>
-                    <span className={style.newPrice}>500грн</span>
+                    <span className={style.newPrice}>{price}грн</span>
                     <span className={style.oldPrice}>600 грн</span>
                 </div>
                 <div className={style.itemBody}>
-                    <p className={style.description}>Очень красивая что-то</p>
+                    <p className={style.description}>{description}</p>
                     <button className={styleHeader.basketBtn}><img src={favritesLogo} alt=""/></button>
                     <button className={styleHeader.basketBtn}><img src={basketLogo} alt=""/></button>
                 </div>
