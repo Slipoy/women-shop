@@ -5,7 +5,7 @@ import HomePage from "./components/HomePage/HomePage";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import FormInvitation from "./components/FormInvitation/formInvitation";
 import Footer from "./components/footer/footer";
-import Catalog from "./components/Catalog/Catalog";
+import CatalogPage from "./components/Catalog/Catalog";
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
                   <Header/>
                   <Routes>
                       <Route path='women-shop/' element={<HomePage/>}/>
-                      <Route path='women-shop/*' element={<Catalog/>}/>
+                      <Route path='women-shop/:products/*' element={<CatalogPage/>}/>
                   </Routes>
               </main>
               <FormInvitation/>

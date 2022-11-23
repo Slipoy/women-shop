@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Banner from "../baner/Baner";
 import style from   './homePage.module.css'
 import Item from "../Item/item";
@@ -8,22 +8,22 @@ import "slick-carousel/slick/slick-theme.css";
 import Reviews from "../Reviews/reviews";
 import Questions from "../ Questions/questions";
 import Cooperation from "../cooperation/cooperation";
-import FormInvitation from "../FormInvitation/formInvitation";
-import Footer from "../footer/footer";
+import {connect} from "react-redux";
 import usePageData from "../../HOk/usePageData";
-import item from "../Item/item";
+import {setCatalogItems} from "../../Redux/catalog-reducer";
+
+import firebase from "../../utils/fb-config";
 
 
 
 
-const HomePage = ()=>{
-    const stockItems = usePageData("stock")
-    console.log(stockItems)
+const HomePage = ({items})=>{
+    usePageData("stock");
+    console.log(items)
     const settings = {
         autoplay: false,
         autoplaySpeed: 1000,
         arrows: true,
-
         slidesToShow: 4,
         slidesToScroll: 4
     }
@@ -45,7 +45,7 @@ const HomePage = ()=>{
                 <h2 className={style.stockHeader}>Успей купить!</h2>
                 <div className={style.stockItems}>
                     <Slider {...settings}>
-                        {stockItems ? stockItems.data.map(item=>{return <Item {...item}/>}): <h3>нет тооваров</h3> }
+                        {/*{items ? items.data.map(item=>{return <Item {...item}/>}): <h3>нет тооваров</h3> }*/}
                     </Slider>
                 </div>
 
@@ -59,4 +59,9 @@ const HomePage = ()=>{
 
     )
 }
-export default HomePage
+let mapStateToProps = (state)=>{
+    return{
+        items: state.catalogItems.store.data
+    }
+}
+export default connect(mapStateToProps, {setCatalogItems})(HomePage)

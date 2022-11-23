@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import firebase from '../utils/fb-config';
+import {setCatalogItems} from "../Redux/catalog-reducer";
+import {connect} from "react-redux";
 
 
 const usePageData = (fieldName) => {
 
-    const [data, setData] = useState(null);
+    
 
     useEffect(() => {
         firebase
@@ -12,10 +14,10 @@ const usePageData = (fieldName) => {
             .ref()
             .child(fieldName)
             .once('value')
-            .then(data => setData(data.val()))
+            .then(data => setCatalogItems(data.val()))
     },[fieldName]);
 
-    return data;
+
 }
 
-export default usePageData;
+export default connect(null, {setCatalogItems})(usePageData) ;
