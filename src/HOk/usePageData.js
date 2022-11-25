@@ -8,16 +8,16 @@ const usePageData = (fieldName) => {
 
     
 
-    useEffect(() => {
-        firebase
-            .database()
-            .ref()
-            .child(fieldName)
-            .once('value')
-            .then(data => setCatalogItems(data.val()))
-    },[fieldName]);
+    // useEffect(() => {
+    //     firebase
+    //         .database()
+    //         .ref()
+    //         .child(fieldName)
+    //         .once('value')
+    //         .then(data => setCatalogItems(data.val()))
+    // },[fieldName]);
 
 
 }
 
-export default connect(null, {setCatalogItems})(usePageData) ;
+export default usePageData ;

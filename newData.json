@@ -1,9 +1,8 @@
-{
+ {
   "women" : {
     "partnerName": "Food Band",
     "category": "Женщинская одежда",
-    "products": [
-      {
+    "products": [{
         "category": "Майки",
         "path": "mikey",
         "data": [

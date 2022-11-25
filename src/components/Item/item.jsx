@@ -1,24 +1,33 @@
-import React from "react";
-import item from "../../assets/items/Rectangle 24.png"
+import React, {useEffect, useState} from "react";
+import itemLogo from "../../assets/items/Rectangle 24.png"
 import style from  './item.module.css'
 import styleHeader from "../Header/header.module.css"
 import basketLogo from  '../../assets/header/basket.png';
 import favritesLogo from  '../../assets/header/favorites.png'
+import {useParams} from "react-router-dom";
+import {connect} from "react-redux";
+import {setAllDataCatalog} from "../../Redux/catalog-reducer";
+import Catalog from "../Catalog/Catalog";
+import {logDOM} from "@testing-library/react";
 
 
 
 
 
-const Item = ({price, description})=>{
+const Item = ({price, description, id, allData, test,productsCategory})=>{
+    let currentData = productsCategory.filter(item => item.path !== test).map(item => item.data)
+    console.log(currentData[0])
+
     return(
-            <div className={style.item}>
-                <img className={style.imgItem} src={item} alt=""/>
+        <>
+            {currentData ? currentData[0].map(item=> { return  <div  className={style.item}>
+                <img className={style.imgItem} src={itemLogo} alt=""/>
                 <div className={style.itemPrice}>
-                    <span className={style.newPrice}>{price}грн</span>
+                    {/*<span className={style.newPrice}>{price}грн</span>*/}
                     <span className={style.oldPrice}>600 грн</span>
                 </div>
                 <div className={style.itemBody}>
-                    <p className={style.description}>{description}</p>
+                    {/*<p className={style.description}>{description}</p>*/}
                     <button className={styleHeader.basketBtn}><img src={favritesLogo} alt=""/></button>
                     <button className={styleHeader.basketBtn}><img src={basketLogo} alt=""/></button>
                 </div>
@@ -31,7 +40,18 @@ const Item = ({price, description})=>{
                     </button>
                     <span className={style.grade}></span>
                 </div>
-            </div>
+            </div>}) : <div>pfuheprf</div>}
+        </>
+
+
     )
 }
-export default Item
+let mapStateToProps = (state)=>{
+    return{
+        allData: state.catalogItems.women.allData,
+        productsCategory:state.catalogItems.women.products,
+        products: state.catalogItems.products,
+        currentData: state.catalogItems.currentTest
+    }
+}
+export default connect(mapStateToProps, {setAllDataCatalog})(Item)

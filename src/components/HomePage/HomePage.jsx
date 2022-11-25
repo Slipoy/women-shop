@@ -17,9 +17,17 @@ import firebase from "../../utils/fb-config";
 
 
 
-const HomePage = ({items})=>{
-    usePageData("stock");
-    console.log(items)
+const HomePage = ({stock,setCatalogItems})=>{
+    useEffect(() => {
+        firebase
+            .database()
+            .ref()
+            .child("stock")
+            .once('value')
+            .then(data => setCatalogItems(data.val()))
+    },["stock"]);
+
+    console.log(stock.data)
     const settings = {
         autoplay: false,
         autoplaySpeed: 1000,
@@ -45,7 +53,7 @@ const HomePage = ({items})=>{
                 <h2 className={style.stockHeader}>Успей купить!</h2>
                 <div className={style.stockItems}>
                     <Slider {...settings}>
-                        {/*{items ? items.data.map(item=>{return <Item {...item}/>}): <h3>нет тооваров</h3> }*/}
+                        {stock && stock.data?.map(item=>{return <Item key={item.id} {...item}/>})}
                     </Slider>
                 </div>
 
@@ -61,7 +69,7 @@ const HomePage = ({items})=>{
 }
 let mapStateToProps = (state)=>{
     return{
-        items: state.catalogItems.store.data
+        stock: state.catalogItems.stock
     }
 }
 export default connect(mapStateToProps, {setCatalogItems})(HomePage)

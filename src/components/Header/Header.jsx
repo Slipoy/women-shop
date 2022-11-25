@@ -5,7 +5,9 @@ import favritesLogo from  '../../assets/header/favorites.png'
 import userLogo from '../../assets/header/icon.png'
 import searchLogo from "../../assets/header/icon-searcр.png"
 import logo from '../../assets/header/logo.png'
-import Catalogmenu from "../catalogMenu/catalogmenu";
+import {connect} from "react-redux";
+import {setCatalogItems, setCategoryName} from "../../Redux/catalog-reducer";
+import CatalogMenuItem from "../catalogMenu/catalogMenuItem/catalogmenuItem";
 
 
 
@@ -21,7 +23,12 @@ const Header = ()=>{
                         <span className={style.lineBtn}></span>
                         <span className={style.lineBtn}></span>
                     </button>
-                   <Catalogmenu/>
+                    <div className={style.catalogMenu}>
+                        <img src={logo} alt=""/>
+                        <div className={style.listItems}>
+                            <CatalogMenuItem/>
+                        </div>
+                    </div>
                 </div>
 
                 <div className={style.rightMenu}>
@@ -41,4 +48,10 @@ const Header = ()=>{
     )
 
 }
-export default Header
+// это можно удалить - тут не нужно
+let mapStateToProps = (state)=>{
+    return{
+        categoryName: state.catalogItems.category
+    }
+}
+export default connect(mapStateToProps, {setCategoryName})(Header)
