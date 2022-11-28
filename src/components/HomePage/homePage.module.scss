@@ -55,15 +55,15 @@ h2 {
   font-weight: 300;
   font-size: 40px;
   line-height: 34.92px;
-  margin-bottom: 100px;
+  margin-bottom: 1000px;
   position: relative;
 }
 
 
 
-  .stockHeader{
+.stockHeader{
     &:after{
-      content: 'Акции';
+      content: 'Акциинеакции';
       position: absolute;
       top: 80%;
       left: 25%;
@@ -73,10 +73,15 @@ h2 {
       font-size: 40px;
       line-height: 35px;
     }
-  }
+}
+.stock{
   .stockItems{
+    display: flex;
     width: 1304px;
+
   }
+}
+
 
 
 

@@ -2,14 +2,13 @@ import React, {useEffect} from "react";
 import Banner from "../baner/Baner";
 import style from   './homePage.module.css'
 import Item from "../Item/item";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import Reviews from "../Reviews/reviews";
 import Questions from "../ Questions/questions";
 import Cooperation from "../cooperation/cooperation";
 import {connect} from "react-redux";
-import usePageData from "../../HOk/usePageData";
 import {setCatalogItems} from "../../Redux/catalog-reducer";
 
 import firebase from "../../utils/fb-config";
@@ -18,23 +17,14 @@ import firebase from "../../utils/fb-config";
 
 
 const HomePage = ({stock,setCatalogItems})=>{
-    useEffect(() => {
-        firebase
-            .database()
-            .ref()
-            .child("stock")
-            .once('value')
-            .then(data => setCatalogItems(data.val()))
-    },["stock"]);
-
-    console.log(stock.data)
-    const settings = {
-        autoplay: false,
-        autoplaySpeed: 1000,
-        arrows: true,
-        slidesToShow: 4,
-        slidesToScroll: 4
-    }
+    // useEffect(() => {
+    //     firebase
+    //         .database()
+    //         .ref()
+    //         .child("stock")
+    //         .once('value')
+    //         .then(data => setCatalogItems(data.val()))
+    // },["stock"]);
     return(
         <>
             <Banner/>
@@ -52,9 +42,7 @@ const HomePage = ({stock,setCatalogItems})=>{
             <section className={style.stock}>
                 <h2 className={style.stockHeader}>Успей купить!</h2>
                 <div className={style.stockItems}>
-                    <Slider {...settings}>
-                        {stock && stock.data?.map(item=>{return <Item key={item.id} {...item}/>})}
-                    </Slider>
+                    <Item/>
                 </div>
 
             </section>

@@ -8,26 +8,34 @@ import {useParams} from "react-router-dom";
 import {connect} from "react-redux";
 import {setAllDataCatalog} from "../../Redux/catalog-reducer";
 import Catalog from "../Catalog/Catalog";
-import {logDOM} from "@testing-library/react";
 
 
 
 
 
-const Item = ({price, description, id, allData, test,productsCategory})=>{
-    let currentData = productsCategory.filter(item => item.path !== test).map(item => item.data)
-    console.log(currentData[0])
-
+const Item = ({productsCategory,allData,path,stock})=>{
+    const params = useParams()
+    const id = params.testID
+    let currentData
+    if (!params.products){
+        currentData = stock.data
+    }
+    if (!id && params.products){
+        currentData = allData
+    }
+    else if(id){
+        currentData = productsCategory.filter(item => item.path === id).map(item => item.data).flat()
+    }
     return(
         <>
-            {currentData ? currentData[0].map(item=> { return  <div  className={style.item}>
+            {currentData ? currentData.map(item=> { return <div  className={style.item}>
                 <img className={style.imgItem} src={itemLogo} alt=""/>
                 <div className={style.itemPrice}>
-                    {/*<span className={style.newPrice}>{price}грн</span>*/}
+                    <span className={style.newPrice}>{item.price}грн</span>
                     <span className={style.oldPrice}>600 грн</span>
                 </div>
                 <div className={style.itemBody}>
-                    {/*<p className={style.description}>{description}</p>*/}
+                    <p className={style.description}>{item.description}</p>
                     <button className={styleHeader.basketBtn}><img src={favritesLogo} alt=""/></button>
                     <button className={styleHeader.basketBtn}><img src={basketLogo} alt=""/></button>
                 </div>
@@ -42,8 +50,6 @@ const Item = ({price, description, id, allData, test,productsCategory})=>{
                 </div>
             </div>}) : <div>pfuheprf</div>}
         </>
-
-
     )
 }
 let mapStateToProps = (state)=>{
@@ -51,7 +57,7 @@ let mapStateToProps = (state)=>{
         allData: state.catalogItems.women.allData,
         productsCategory:state.catalogItems.women.products,
         products: state.catalogItems.products,
-        currentData: state.catalogItems.currentTest
+        stock: state.catalogItems.stock
     }
 }
 export default connect(mapStateToProps, {setAllDataCatalog})(Item)

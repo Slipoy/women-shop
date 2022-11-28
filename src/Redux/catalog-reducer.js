@@ -9,11 +9,11 @@ const initialState ={
     stock : [],
     category: [],
     women: {
+        category: "",
         products : [],
         allData: []
     },
-    currentTest: []
-
+    currentSubcategory: ""
 }
 
 const catalogReducer = (state = initialState, action)=>{
@@ -32,14 +32,14 @@ const catalogReducer = (state = initialState, action)=>{
             const allData = action.data.products.map(item => item.data).flat(Infinity)
             return {
                 ...state,
-                women: {products: [...action.data.products], allData: [...allData]}
+                women: {category: action.data.category, products: [...action.data.products], allData: [...allData]}
             }
-        case TEST:
-            let test = state.women.products.filter(item => item.path === action.path)
-            return {
-                ...state,
-                currentTest: [test]
-            }
+        // case TEST:
+        //     let test = state.women.products.filter(item => item.path === action.path).map(item => item.category).join()
+        //     return {
+        //         ...state,
+        //         currentSubcategory: test
+        //     }
 
 
         default: return state

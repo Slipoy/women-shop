@@ -63,6 +63,8 @@ h2 {
 }
 
 .stockItems {
+  display: flex;
+  overflow: hidden;
   width: 1304px;
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import {NavLink, useParams} from "react-router-dom";
+import {NavLink, useLocation, useParams} from "react-router-dom";
 import './catalog.css'
 import Item from "../Item/item";
 import usePageData from "../../HOk/usePageData";
@@ -9,35 +9,36 @@ import {connect} from "react-redux";
 import {setAllDataCatalog, setCatalogItems, setTEst} from "../../Redux/catalog-reducer";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-
-
-const CatalogPage = ({setAllDataCatalog, productsCategory,allData, setTEst,currentData})=>{
-    const {products} = useParams()
-
-
+const CatalogPage = ({setAllDataCatalog, productsCategory,allData, setTEst,subcategory,mainCategory})=>{
+    const params = useParams()
+    const id = params.testID
+    console.log(params)
     useEffect(() => {
         firebase
             .database()
             .ref()
-            .child(products)
+            .child(params.products)
             .once('value')
             .then(data => setAllDataCatalog(data.val()))
-    },[products]);
+    },[params.products]);
+
 
     return(
+
         <div className="mainPageCatalog">
-            <h2>{allData && allData.category}</h2>
+            <div><span>Главная/{mainCategory}/{id}</span></div>
+
+            <h2>{mainCategory}</h2>
             <div className='catalogBody'>
                 <nav className='navigate'>
-                    {productsCategory ? productsCategory.map(item => {return <NavLink onClick={()=>setTEst(item.path)} className="linkNav" to={`/women-shop/${products}/${item.path}`}>{item.category}</NavLink>})
+                    {productsCategory ? productsCategory.map(item => {return <NavLink className="linkNav" to={`/women-shop/${params.products}/${item.path}`}>{item.category}</NavLink>})
                         : <p>загрузка</p>}
                 </nav>
                 <div className='catalogItems'>
                     <Routes>
-                        { productsCategory.map(item => { return <Route path={"/women-shop/" + products + "/" + item.path} element={<Item test={item.path}/>}/>})}
+                        <Route path="" element={<Item/>}/>
+                        {productsCategory.map(item => {return <Route path=":testID/" element={<Item path={params.products}/>}/>})}
                     </Routes>
-                    {/*{allData ? allData?.map(item=> <Item {...item}/>) : <p>загрузка</p> }*/}
-                    <Item/>
                 </div>
             </div>
         </div>
@@ -47,7 +48,7 @@ let mapStateToProps = (state)=>{
     return{
         allData: state.catalogItems.women.allData,
         productsCategory:state.catalogItems.women.products,
-        currentData: state.catalogItems.currentTest
+        mainCategory: state.catalogItems.women.category,
     }
 }
 export default connect(mapStateToProps, {setAllDataCatalog, setTEst})(CatalogPage)

@@ -1,36 +1,39 @@
-.item{
-  .imgItem{
-    margin-bottom: 20px;
-  }
-  width: 300px;
-  .itemPrice{
-    margin-bottom: 10px;
-    span{
-      font-size: 14px;
-      line-height: 16.4px;
-      color: #121212;
-      margin-right: 30px;
-      font-weight: 400;
-    }
-    .oldPrice{
-      text-decoration: line-through;
-      color: #7D7D7D;
-      font-weight: 300;
-    }
-  }
-  .itemBody{
-    display: flex;
-    margin-bottom: 20px;
-    .description{
-      font-size: 12px;
-      flex: 0.8;
-    }
-  }
-  .itemFooter{
-    display: flex;
 
+  .item{
+    .imgItem{
+      margin-bottom: 250px;
+    }
+    width: 300px;
+    .itemPrice{
+      margin-bottom: 10px;
+      span{
+        font-size: 14px;
+        line-height: 16.4px;
+        color: #121212;
+        margin-right: 30px;
+        font-weight: 400;
+      }
+      .oldPrice{
+        text-decoration: line-through;
+        color: #7D7D7D;
+        font-weight: 300;
+      }
+    }
+    .itemBody{
+      display: flex;
+      margin-bottom: 20px;
+      .description{
+        font-size: 12px;
+        flex: 0.8;
+      }
+    }
+    .itemFooter{
+      display: flex;
+
+    }
   }
-}
+
+
 .btnMore{
   width: 148px;
   height: 37px;
