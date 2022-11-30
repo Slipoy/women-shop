@@ -13,7 +13,7 @@
     flex-wrap: wrap;
 }
 .navigate{
-display: flex;
+    display: flex;
     flex-direction: column;
     width: 10%;
     border: 1px solid black;
