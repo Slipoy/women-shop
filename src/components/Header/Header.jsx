@@ -17,7 +17,7 @@ const Header = ()=>{
     return (
         <header>
             <div className={style.header}>
-                ТЕСТ
+
                 <div className={style.mainMenu}>
                     <button className={style.mainMenuBtn}>
                         <span className={style.lineBtn}></span>
