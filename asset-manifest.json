@@ -1,11 +1,16 @@
 {
   "files": {
-    "main.css": "/women-shop/static/css/main.193714ff.css",
-    "main.js": "/women-shop/static/js/main.b569f7ac.js",
+    "main.css": "/women-shop/static/css/main.2bd90973.css",
+    "main.js": "/women-shop/static/js/main.ea7c1224.js",
     "static/media/main1.png": "/women-shop/static/media/main1.9f84b82d36616a53f0e8.png",
+    "static/media/Rectangle 26.png": "/women-shop/static/media/Rectangle 26.b28e407b589a64f8d942.png",
+    "static/media/Rectangle 27.png": "/women-shop/static/media/Rectangle 27.b28e407b589a64f8d942.png",
     "static/media/Rectangle 22 (1).png": "/women-shop/static/media/Rectangle 22 (1).de8942a6081bf4bd882b.png",
+    "static/media/Rectangle 28.png": "/women-shop/static/media/Rectangle 28.ffe651f5c121416b706d.png",
+    "static/media/Rectangle 23.png": "/women-shop/static/media/Rectangle 23.29d73572abc22c8a2404.png",
     "static/media/main3.png": "/women-shop/static/media/main3.4a68195f73ff4e34a186.png",
     "static/media/Rectangle 24.png": "/women-shop/static/media/Rectangle 24.4470e0e5bd42d5b025ac.png",
+    "static/media/Rectangle 25.png": "/women-shop/static/media/Rectangle 25.200a2155479e41d183ce.png",
     "static/media/main2.png": "/women-shop/static/media/main2.7464279f3002a00d2049.png",
     "static/media/Ellipse 8.png": "/women-shop/static/media/Ellipse 8.3f2668fdc1f2e93b8a41.png",
     "static/media/icon-searcр.png": "/women-shop/static/media/icon-searcр.6b3bac6508bb3fb19402.png",
@@ -14,11 +19,12 @@
     "static/media/slick.ttf": "/women-shop/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/women-shop/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/women-shop/index.html",
-    "main.193714ff.css.map": "/women-shop/static/css/main.193714ff.css.map",
-    "main.b569f7ac.js.map": "/women-shop/static/js/main.b569f7ac.js.map"
+    "static/media/items.module.css.map": "/women-shop/static/media/items.module.css.2c819f58b8edd0995e32.map",
+    "main.2bd90973.css.map": "/women-shop/static/css/main.2bd90973.css.map",
+    "main.ea7c1224.js.map": "/women-shop/static/js/main.ea7c1224.js.map"
   },
   "entrypoints": [
-    "static/css/main.193714ff.css",
-    "static/js/main.b569f7ac.js"
+    "static/css/main.2bd90973.css",
+    "static/js/main.ea7c1224.js"
   ]
 }
