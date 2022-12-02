@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import itemLogo from "../../assets/items/Rectangle 24.png"
+// import itemLogo from "../../assets/items/Rectangle 24.png"
 import style from './items.module.css'
 import styleHeader from "../Header/header.module.css"
 import basketLogo from  '../../assets/header/basket.png';
@@ -32,7 +32,7 @@ const Items = ({productsCategory,allData,path,stock,router,products})=>{
     return(
         <>
             {currentData ? currentData.map((item, index)=> { return <ItemCard key={index} {...item}/>}) : <div>pfuheprf</div>}
-        </>
+            </>
     )
 }
 let mapStateToProps = (state)=>{
