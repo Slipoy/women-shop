@@ -11,12 +11,12 @@ import basketLogo from "../../assets/header/basket.png";
 const ItemCard = ({price, description, image})=>{
     const pathID = `../../assets/${image}`
     console.log(pathID)
-    // const src = require(`../../assets/${pathID}`)
+    const src = require(`${pathID}`)
 
 
     return(
         <div className={style.item}>
-            <img className={style.imgItem} src={`${pathID}`} alt=""/>
+            <img className={style.imgItem} src={`${src}`} alt=""/>
             <div className={style.itemPrice}>
                 <span className={style.newPrice}>{price}грн</span>
                 <span className={style.oldPrice}>600 грн</span>
