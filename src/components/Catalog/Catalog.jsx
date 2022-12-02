@@ -1,44 +1,47 @@
-import React from "react";
+import React, {useState} from "react";
+import style from "./catalog1.module.css"
 import {NavLink, useLocation, useParams} from "react-router-dom";
-import './catalog.css'
-import Item from "../Item/item";
+import Items from "../Items/items";
 import usePageData from "../../HOk/usePageData";
-import {useEffect} from "react";
-import firebase from "../../utils/fb-config";
 import {connect} from "react-redux";
 import {setAllDataCatalog, setCatalogItems, setTEst} from "../../Redux/catalog-reducer";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {compose} from "redux";
+import {withRouter} from "../../HOk/withRouter";
 
-const CatalogPage = ({setAllDataCatalog, productsCategory,allData, setTEst,subcategory,mainCategory})=>{
-    const params = useParams()
-    const id = params.testID
-    console.log(params)
-    useEffect(() => {
-        firebase
-            .database()
-            .ref()
-            .child(params.products)
-            .once('value')
-            .then(data => setAllDataCatalog(data.val()))
-    },[params.products]);
-
-
+const CatalogPage = ({setAllDataCatalog, productsCategory,allData, setTEst,subcategory,mainCategory, router})=>{
+    const products = router.params.products
+    const id = router.params.subcategory
+    const subCategory = id && productsCategory.filter(item => item.path === id).map(item => item.category)
+    usePageData(products, setAllDataCatalog)
     return(
 
-        <div className="mainPageCatalog">
-            <div><span>Главная/{mainCategory}/{id}</span></div>
-
+        <div className={style.mainPageCatalog}>
+            <div className={style.pagePath}>
+                <span>{`Главная/${mainCategory}`}</span>
+                {subCategory ? <span>/{subCategory}</span> : <span></span>}
+            </div>
             <h2>{mainCategory}</h2>
-            <div className='catalogBody'>
-                <nav className='navigate'>
-                    {productsCategory ? productsCategory.map(item => {return <NavLink className="linkNav" to={`/women-shop/${params.products}/${item.path}`}>{item.category}</NavLink>})
+            <div className={style.sortBtn}>
+                <p>Сортировать по:</p>
+                <span>Популярности</span>
+                <span>Рейтингу</span>
+                <span>Цене</span>
+                <span>Скидки</span>
+                <span>Обновлению</span>
+            </div>
+            <div className={style.catalogBody}>
+
+                <nav className={style.navigate}>
+                    {productsCategory ? productsCategory.map((item, index) => {return <NavLink  key={index} className={style.linkNav} to={`/women-shop/${products}/${item.path}`}>{item.category}</NavLink>})
                         : <p>загрузка</p>}
                 </nav>
-                <div className='catalogItems'>
-                    <Routes>
-                        <Route path="" element={<Item/>}/>
-                        {productsCategory.map(item => {return <Route path=":testID/" element={<Item path={params.products}/>}/>})}
-                    </Routes>
+                <div className={style.catalogItems}>
+                    {/*<Routes>*/}
+                    {/*    /!*<Route path="" element={<Items/>}/>*!/*/}
+                    {/*    /!*{productsCategory.map((item, index) => {return <Route key={index} path=":subcategory/" element={<Items path={products}/>}/>})}*!/*/}
+                    {/*   */}
+                    {/*</Routes>*/}
+                    <Items products={products}/>
                 </div>
             </div>
         </div>
@@ -51,4 +54,4 @@ let mapStateToProps = (state)=>{
         mainCategory: state.catalogItems.women.category,
     }
 }
-export default connect(mapStateToProps, {setAllDataCatalog, setTEst})(CatalogPage)
+export default compose(connect(mapStateToProps, {setAllDataCatalog, setTEst}),withRouter)(CatalogPage)

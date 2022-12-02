@@ -16,7 +16,8 @@ function App() {
                   <Header/>
                   <Routes>
                       <Route path='women-shop/' element={<HomePage/>}/>
-                      <Route path="women-shop/:products/*" element={<CatalogPage/>}/>
+                      <Route path="women-shop/:products/" element={<CatalogPage/>}/>
+                      <Route path="women-shop/:products/:subcategory/*" element={<CatalogPage/>}/>
                   </Routes>
               </main>
               <FormInvitation/>

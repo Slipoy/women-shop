@@ -1,6 +1,6 @@
 import React from "react";
 import style from './formInvate.module.css'
-import styleHome from "../Item/item.module.css"
+import styleHome from "../Items/items.module.css"
 
 
 

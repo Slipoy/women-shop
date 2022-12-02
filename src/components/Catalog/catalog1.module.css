@@ -1,0 +1,56 @@
+.mainPageCatalog {
+  padding-top: 150px;
+}
+.mainPageCatalog .pagePath {
+  font-size: 20px;
+  font-weight: 400;
+  color: #7D7D7D;
+  margin-bottom: 50px;
+}
+.mainPageCatalog .sortBtn {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.mainPageCatalog .sortBtn p {
+  font-weight: 400;
+  font-size: 20px;
+}
+.mainPageCatalog .sortBtn span {
+  font-size: 20px;
+  font-weight: 400;
+}
+.mainPageCatalog h2 {
+  margin-bottom: 50px;
+}
+
+.catalogBody {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalogItems {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 10%;
+  height: 500px;
+}
+
+.linkNav {
+  text-decoration: none;
+  color: #121212;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=catalog1.module.css.map */

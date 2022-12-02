@@ -1,3 +1,6 @@
+
+import React from "react";
+
 const INIT_STOCK = "INIT_STOCK"
 const INIT_CATALOG_NAMES = "INIT_CATALOG_NAMES"
 const INIT_ALL_DATA_CATALOG = "INIT_ALL_DATA"
@@ -10,6 +13,7 @@ const initialState ={
     category: [],
     women: {
         category: "",
+        subcategory: "",
         products : [],
         allData: []
     },

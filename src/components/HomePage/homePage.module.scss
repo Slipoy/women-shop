@@ -55,7 +55,7 @@ h2 {
   font-weight: 300;
   font-size: 40px;
   line-height: 34.92px;
-  margin-bottom: 1000px;
+  margin-bottom: 100px;
   position: relative;
 }
 
@@ -78,6 +78,8 @@ h2 {
   .stockItems{
     display: flex;
     width: 1304px;
+    overflow: hidden;
+    //margin-right: 20px;
 
   }
 }
