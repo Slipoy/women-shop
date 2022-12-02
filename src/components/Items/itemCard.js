@@ -4,17 +4,19 @@ import itemLogo from "../../assets/items/Rectangle 24.png";
 import styleHeader from "../Header/header.module.css";
 import favritesLogo from "../../assets/header/favorites.png";
 import basketLogo from "../../assets/header/basket.png";
-// import test from "../../assets/items/Rectangle 23.png"
 
 
 
 
 const ItemCard = ({price, description, image})=>{
-    const src = require(`${image}`)
-    console.log(src)
+    const pathID = `../../assets/${image}`
+    console.log(pathID)
+    // const src = require(`../../assets/${pathID}`)
+
+
     return(
         <div className={style.item}>
-            <img className={style.imgItem} src={itemLogo} alt=""/>
+            <img className={style.imgItem} src={`${pathID}`} alt=""/>
             <div className={style.itemPrice}>
                 <span className={style.newPrice}>{price}грн</span>
                 <span className={style.oldPrice}>600 грн</span>
