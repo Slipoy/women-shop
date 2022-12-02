@@ -51,7 +51,7 @@ h2 {
 }
 
 .stockHeader:after {
-  content: "Акции";
+  content: "Акциинеакции";
   position: absolute;
   top: 80%;
   left: 25%;
@@ -62,10 +62,10 @@ h2 {
   line-height: 35px;
 }
 
-.stockItems {
+.stock .stockItems {
   display: flex;
-  overflow: hidden;
   width: 1304px;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=homePage.module.css.map */

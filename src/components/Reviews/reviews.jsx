@@ -2,7 +2,7 @@ import React from "react";
 import style from "./reviews.module.css"
 import user1Logo from '../../assets/users/Ellipse 8.png'
 import star from '../../assets/star/Vector (1).png'
-import styleItems from "../Item/item.module.css"
+import styleItems from "../Items/items.module.css"
 
 
 

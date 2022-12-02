@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import Banner from "../baner/Baner";
 import style from   './homePage.module.css'
-import Item from "../Item/item";
+import Items from "../Items/items";
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
@@ -17,14 +17,14 @@ import firebase from "../../utils/fb-config";
 
 
 const HomePage = ({stock,setCatalogItems})=>{
-    // useEffect(() => {
-    //     firebase
-    //         .database()
-    //         .ref()
-    //         .child("stock")
-    //         .once('value')
-    //         .then(data => setCatalogItems(data.val()))
-    // },["stock"]);
+    useEffect(() => {
+        firebase
+            .database()
+            .ref()
+            .child("stock")
+            .once('value')
+            .then(data => setCatalogItems(data.val()))
+    },["stock"]);
     return(
         <>
             <Banner/>
@@ -42,7 +42,7 @@ const HomePage = ({stock,setCatalogItems})=>{
             <section className={style.stock}>
                 <h2 className={style.stockHeader}>Успей купить!</h2>
                 <div className={style.stockItems}>
-                    <Item/>
+                    <Items/>
                 </div>
 
             </section>

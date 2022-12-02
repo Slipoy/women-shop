@@ -1,8 +1,9 @@
 .item {
+  margin-right: 20px;
   width: 300px;
 }
 .item .imgItem {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .item .itemPrice {
   margin-bottom: 10px;
@@ -65,4 +66,4 @@
   border-left: 10px solid white;
 }
 
-/*# sourceMappingURL=item.module.css.map */
+/*# sourceMappingURL=items.module.css.map */
