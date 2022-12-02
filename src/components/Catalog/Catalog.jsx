@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import style from "./catalog1.module.css"
 import {NavLink, useLocation, useParams} from "react-router-dom";
-import Items from "../Items/items";
+import Items from "../ItemsTest/items";
 import usePageData from "../../HOk/usePageData";
 import {connect} from "react-redux";
 import {setAllDataCatalog, setCatalogItems, setTEst} from "../../Redux/catalog-reducer";
@@ -37,8 +37,8 @@ const CatalogPage = ({setAllDataCatalog, productsCategory,allData, setTEst,subca
                 </nav>
                 <div className={style.catalogItems}>
                     {/*<Routes>*/}
-                    {/*    /!*<Route path="" element={<Items/>}/>*!/*/}
-                    {/*    /!*{productsCategory.map((item, index) => {return <Route key={index} path=":subcategory/" element={<Items path={products}/>}/>})}*!/*/}
+                    {/*    /!*<Route path="" element={<ItemsTest/>}/>*!/*/}
+                    {/*    /!*{productsCategory.map((item, index) => {return <Route key={index} path=":subcategory/" element={<ItemsTest path={products}/>}/>})}*!/*/}
                     {/*   */}
                     {/*</Routes>*/}
                     <Items products={products}/>

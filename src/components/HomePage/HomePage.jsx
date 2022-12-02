@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import Banner from "../baner/Baner";
 import style from   './homePage.module.css'
-import Items from "../Items/items";
+import Items from "../ItemsTest/items";
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";

@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30bd3980-b510-44fc-910b-a57a6dcca363" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/src/components/ItemsTest/items/Rectangle 23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ItemsTest/items/Rectangle 24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ItemsTest/items/Rectangle 25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ItemsTest/items/Rectangle 26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ItemsTest/items/Rectangle 27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ItemsTest/items/Rectangle 28.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Items/itemCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Items/itemCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Items/items.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Items/items.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBD.json" beforeDir="false" afterPath="$PROJECT_DIR$/dataBD.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/items/Rectangle23.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/items/Rectangle 23.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Catalog/Catalog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalog/Catalog.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormInvitation/formInvitation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormInvitation/formInvitation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomePage/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/HomePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Items/itemCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/itemCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Items/items.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/items.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Items/items.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/items.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Items/items.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/items.module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Items/items.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/items.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Reviews/reviews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reviews/reviews.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,27 +44,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/WebstormProjects/women-shop/src/components/Items&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/user/WebstormProjects/women-shop/src/components/ItemsTest",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\WebstormProjects\women-shop\src\components\ItemsTest" />
       <recent name="C:\Users\user\WebstormProjects\women-shop\src\components\Items" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\WebstormProjects\women-shop\src\components\Items\items" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.deploy">
+  <component name="RunManager" selected="npm.start">
     <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -72,8 +88,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.deploy" />
       </list>
     </recent_temporary>
   </component>
@@ -88,6 +104,7 @@
       <workItem from="1669830203971" duration="402000" />
       <workItem from="1669979617874" duration="74000" />
       <workItem from="1669979759612" duration="5281000" />
+      <workItem from="1669987906368" duration="2565000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1669830340239</created>
@@ -110,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669980140871</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test">
+      <created>1669987931955</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669987931955</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
