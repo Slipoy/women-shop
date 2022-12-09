@@ -10,6 +10,9 @@ section .addReview {
   line-height: 16px;
   margin-top: 30px;
 }
+section .addReview:hover {
+  cursor: pointer;
+}
 section .reviewsSection {
   width: 100%;
   display: flex;
@@ -71,6 +74,7 @@ section .reviewsSection .btnMore .arrowBtn {
   margin: 0;
 }
 section .reviewsSection .btnMore:hover {
+  cursor: pointer;
   color: white;
   background-color: #514a7e;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);

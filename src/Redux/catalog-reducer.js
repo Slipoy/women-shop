@@ -5,6 +5,9 @@ const INIT_STOCK = "INIT_STOCK"
 const INIT_CATALOG_NAMES = "INIT_CATALOG_NAMES"
 const INIT_ALL_DATA_CATALOG = "INIT_ALL_DATA"
 const TEST = "TEST"
+const SET_ITEMS_PAGE = "SET_ITEMS_PAGE"
+const SORT_BY_RATING = "SORT_BY_RATING"
+const SORT_BY_PRICE = 'SORT_BY_PRICE'
 
 
 
@@ -17,7 +20,8 @@ const initialState ={
         products : [],
         allData: []
     },
-    currentSubcategory: ""
+    allData: [],
+    itemsPerPage : 6
 }
 
 const catalogReducer = (state = initialState, action)=>{
@@ -38,12 +42,22 @@ const catalogReducer = (state = initialState, action)=>{
                 ...state,
                 women: {category: action.data.category, products: [...action.data.products], allData: [...allData]}
             }
-        // case TEST:
-        //     let test = state.women.products.filter(item => item.path === action.path).map(item => item.category).join()
-        //     return {
-        //         ...state,
-        //         currentSubcategory: test
-        //     }
+        case SET_ITEMS_PAGE:
+            const step = 6;
+            return {...state,
+            itemsPerPage: state.itemsPerPage + step}
+        case SORT_BY_RATING:
+            const sortDataRatingAll = action.data.sort((a,b)=> {return b.stars - a.stars})
+            action.dataCategory.forEach(item=> item.data.sort((a,b)=> {return b.stars - a.stars}))
+            return {...state,
+                women: {...state.women, allData: [...sortDataRatingAll], products: [...action.dataCategory]}
+            }
+        case SORT_BY_PRICE:
+            const sortDataPriceALL = action.data.sort((a,b)=> {return b.price - a.price})
+            action.dataCategory.forEach(item=> item.data.sort((a,b)=> {return b.price - a.price}))
+            return {...state,
+                women: {...state.women, allData: [...sortDataPriceALL], products: [...action.dataCategory]}
+            }
 
 
         default: return state
@@ -69,10 +83,23 @@ export const setAllDataCatalog = (data)=>{
         data
     }
 }
-export const setTEst = (path)=>{
+export const setTEst = ()=>{
     return{
         type: TEST,
-        path
+
+    }
+}
+
+export const setItemsPerPage = () =>{
+    return{
+        type: SET_ITEMS_PAGE
+    }
+}
+export const sortItem = (data, dataCategory, type) =>{
+    return{
+        type,
+        data,
+        dataCategory
     }
 }
 export default catalogReducer

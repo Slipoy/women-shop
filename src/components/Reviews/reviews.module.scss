@@ -8,6 +8,9 @@ section{
     font-size: 14px;
     line-height: 16px;
     margin-top: 30px;
+    &:hover{
+      cursor: pointer;
+    }
   }
   .reviewsSection {
     width: 100%;
@@ -74,6 +77,7 @@ section{
         margin: 0;
       }
       &:hover {
+        cursor: pointer;
         color: white;
         background-color: #514a7e;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);

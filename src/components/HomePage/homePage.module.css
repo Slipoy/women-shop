@@ -62,10 +62,11 @@ h2 {
   line-height: 35px;
 }
 
+.stock {
+  width: 100%;
+}
 .stock .stockItems {
-  display: flex;
   width: 1304px;
-  overflow: hidden;
 }
 
 /*# sourceMappingURL=homePage.module.css.map */

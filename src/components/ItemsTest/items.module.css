@@ -1,9 +1,20 @@
 .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   margin-right: 20px;
-  width: 300px;
+  margin-bottom: 50px;
+  width: 280px;
 }
 .item .imgItem {
   margin-bottom: 25px;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+.item .imgItem img {
+  width: 100%;
 }
 .item .itemPrice {
   margin-bottom: 10px;
@@ -22,14 +33,28 @@
 }
 .item .itemBody {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
+  width: 100%;
 }
 .item .itemBody .description {
   font-size: 12px;
-  flex: 0.8;
+  height: 50px;
+  flex: 0.9;
+  overflow: hidden;
 }
 .item .itemFooter {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.item .itemFooter span {
+  display: flex;
+}
+.item .itemFooter span img {
+  margin-left: 5px;
+  width: 9px;
+  height: 9px;
 }
 
 .btnMore {
@@ -56,6 +81,7 @@
 }
 .btnMore:hover {
   color: white;
+  cursor: pointer;
   background-color: #514a7e;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -64,6 +90,23 @@
 }
 .btnMore:hover .triangleRight {
   border-left: 10px solid white;
+}
+
+.btnMorePage {
+  width: 132px;
+  height: 132px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px solid #514A7E;
+  color: #514A7E;
+  position: absolute;
+  bottom: -115px;
+  left: 45%;
+}
+.btnMorePage:hover {
+  background: #514a7e;
+  color: #fffdf5;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=items.module.css.map */

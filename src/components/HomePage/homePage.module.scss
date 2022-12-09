@@ -1,13 +1,11 @@
 .regalia {
   margin-top: 200px;
+  //margin: 200px auto 0;
   width: 100%;
-
-
   .regaliaList {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
     p {
       position: relative;
       box-sizing: border-box;
@@ -75,10 +73,12 @@ h2 {
     }
 }
 .stock{
+  width: 100%;
   .stockItems{
-    display: flex;
+    //display: flex;
+    //flex-wrap: wrap;
     width: 1304px;
-    overflow: hidden;
+    //overflow: hidden;
     //margin-right: 20px;
 
   }

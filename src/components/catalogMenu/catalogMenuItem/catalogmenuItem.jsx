@@ -20,18 +20,10 @@ const CatalogMenuItem = ({categoryName, setCategoryName}) => {
     return (
         <div className={style.listItem}>
             {categoryName ? categoryName?.map((item, index) => {
-                    return <NavLink key={index} className={style.categoriesName} to={"women-shop/" + item.path}>{item.name}</NavLink>
+                    return <NavLink key={index} className={style.categoriesName} to={"women-shop/catalog/" + item.path}>{item.name}</NavLink>
                 })
                 : <>
                     <li>Женщинам</li>
-                    {/*<li>Мужчинам</li>*/}
-                    {/*<li>Детям</li>*/}
-                    {/*<li>Обувь</li>*/}
-                    {/*<li>Игрушки</li>*/}
-                    {/*<li>Аксессуары</li>*/}
-                    {/*<li>Большие размеры</li>*/}
-                    {/*<li>Дополнительно</li>*/}
-                    {/*<li>Акции</li>*/}
                 </>}
         </div>
     )

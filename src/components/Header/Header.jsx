@@ -8,6 +8,7 @@ import logo from '../../assets/header/logo.png'
 import {connect} from "react-redux";
 import {setCatalogItems, setCategoryName} from "../../Redux/catalog-reducer";
 import CatalogMenuItem from "../catalogMenu/catalogMenuItem/catalogmenuItem";
+import {NavLink} from "react-router-dom";
 
 
 
@@ -38,9 +39,11 @@ const Header = ()=>{
                         <input type="text" placeholder={"Поиск"}/>
                     </div>
                     <div className={style.menuBtn}>
+
                         <button className={style.basketBtn}><img src={userLogo} alt=""/></button>
                         <button className={style.basketBtn}><img src={favritesLogo} alt=""/></button>
-                        <button className={style.basketBtn}><img src={basketLogo} alt=""/></button>
+                        <NavLink to={"/women-shop/basket"} ><button className={style.basketBtn}><img src={basketLogo} alt=""/></button></NavLink>
+
                     </div>
                 </div>
 

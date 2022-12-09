@@ -8,19 +8,22 @@
 }
 .sectionQuestions{
   .questions{
-    //display: flex;
-    //justify-content: space-between;
     position: relative;
     margin-bottom: 30px;
-
-    .answer{
-      display: none;
-      overflow: hidden;
-    }
-    &:active{
-      .answer{
-        display: inline-block;
+    .questBody{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      &:hover{
+        cursor: pointer;
       }
+    }
+    .answer{
+      margin-top: 20px;
+      color: #7d7d7d;
+    }
+    .answerCLose{
+      display: none;
     }
     p{
       display: inline-block;
@@ -29,6 +32,7 @@
       font-weight: 400;
       font-size: 20px;
       line-height: 23.44px;
+      color: #121212;
       &:after{
         content: "";
         position: absolute;
@@ -38,12 +42,20 @@
         border-bottom: 0.5px solid #7D7D7D;
       }
     }
-    span{
+    .openBtn{
+      align-items: end;
       display: inline-block;
-      width: 50%;
       text-align: right;
       color: #514a7e;
       font-size: 20px;
+    }
+    .closeBtn{
+      align-items: end;
+      display: inline-block;
+      text-align: right;
+      color: #514a7e;
+      font-size: 20px;
+      transform: rotate(45deg);
     }
   }
 }

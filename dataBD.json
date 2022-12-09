@@ -11,6 +11,7 @@
           "id": "fb01",
           "image": "items/Rectangle 23.png",
           "name": "Мясная",
+          "stars": 5,
           "price": 685
         },
         {
@@ -18,6 +19,7 @@
           "id": "fb02",
           "image": "items/Rectangle 24.png",
           "name": "Маргарита",
+          "stars": 3,
           "price": 693
         },
         {
@@ -25,6 +27,7 @@
           "id": "fb03",
           "image": "items/Rectangle 25.png",
           "name": "Пепперони",
+          "stars": 5,
           "price": 595
         },
         {
@@ -32,6 +35,7 @@
           "id": "fb04",
           "image": "items/Rectangle 26.png",
           "name": "Семь сыров",
+          "stars": 3,
           "price": 785
         },
         {
@@ -39,6 +43,7 @@
           "id": "fb05",
           "image": "items/Rectangle 27.png",
           "name": "Том Ям",
+          "stars": 4,
           "price": 695
         },
         {
@@ -46,6 +51,7 @@
           "id": "fb06",
           "image": "items/Rectangle 28.png",
           "name": "Норвежская",
+          "stars": 2,
           "price": 875
         }
       ]
@@ -56,44 +62,49 @@
         "data": [
           {
             "description": "Пицца, соус, сыр Моцарелла, томат, куриное филе, пепперони, свинина, бекон",
-            "id": "fb01",
+            "id": "fb07",
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
+            "stars": 3,
             "price": 685
           },
           {
             "description": "Пицца соус, сыр Моцарелла, томат",
-            "id": "fb02",
+            "id": "fb08",
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
+            "stars": 4,
             "price": 693
           },
           {
             "description": "Пицца соус, пепперони, сыр Моцарелла",
-            "id": "fb03",
+            "id": "fb09",
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
+            "stars": 3,
             "price": 595
           },
           {
             "description": "Сыр моцарелла, сыр эмменталь, соус сырный, сыр горгондзола, сыр чеддер, сыр креметте, сыр фетакса, сыр пармезан",
-            "id": "fb04",
+            "id": "fb10",
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
+            "stars": 5,
             "price": 785
           },
           {
             "description": "Креветки, куриное филе, соус Том Ям, сыр Моцарелла, шампиньоны, капуста брокколи, томат.",
-            "id": "fb05",
+            "id": "fb11",
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
             "price": 695
           },
           {
             "description": "Сливочный соус, соус манго-чили, сыр моцарелла, лук красный, перец болгарский, ломтики лосося, салат Айсберг",
-            "id": "fb06",
+            "id": "fb12",
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
+            "stars": 5,
             "price": 875
           }
         ]
@@ -103,44 +114,50 @@
         "data": [
           {
             "description": "Пицца, соус, сыр Моцарелла, томат, куриное филе, пепперони, свинина, бекон",
-            "id": "fb01",
+            "id": "fb13",
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
+            "stars": 5,
             "price": 685
           },
           {
             "description": "Пицца соус, сыр Моцарелла, томат",
-            "id": "fb02",
+            "id": "fb14",
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
+            "stars": 4,
             "price": 693
           },
           {
             "description": "Пицца соус, пепперони, сыр Моцарелла",
-            "id": "fb03",
+            "id": "fb15",
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
+            "stars": 4,
             "price": 595
           },
           {
             "description": "Сыр моцарелла, сыр эмменталь, соус сырный, сыр горгондзола, сыр чеддер, сыр креметте, сыр фетакса, сыр пармезан",
-            "id": "fb04",
+            "id": "fb16",
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
+            "stars": 5,
             "price": 785
           },
           {
             "description": "Креветки, куриное филе, соус Том Ям, сыр Моцарелла, шампиньоны, капуста брокколи, томат.",
-            "id": "fb05",
+            "id": "fb17",
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
+            "stars": 3,
             "price": 695
           },
           {
             "description": "Сливочный соус, соус манго-чили, сыр моцарелла, лук красный, перец болгарский, ломтики лосося, салат Айсберг",
-            "id": "fb06",
+            "id": "fb18",
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
+            "stars": 5,
             "price": 875
           }
         ]
@@ -150,44 +167,50 @@
         "data": [
           {
             "description": "Пицца, соус, сыр Моцарелла, томат, куриное филе, пепперони, свинина, бекон",
-            "id": "fb01",
+            "id": "fb19",
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
+            "stars": 3,
             "price": 685
           },
           {
             "description": "Пицца соус, сыр Моцарелла, томат",
-            "id": "fb02",
+            "id": "fb20",
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
+            "stars": 4,
             "price": 693
           },
           {
             "description": "Пицца соус, пепперони, сыр Моцарелла",
-            "id": "fb03",
+            "id": "fb21",
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
+            "stars": 2,
             "price": 595
           },
           {
             "description": "Сыр моцарелла, сыр эмменталь, соус сырный, сыр горгондзола, сыр чеддер, сыр креметте, сыр фетакса, сыр пармезан",
-            "id": "fb04",
+            "id": "fb22",
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
+            "stars": 5,
             "price": 785
           },
           {
             "description": "Креветки, куриное филе, соус Том Ям, сыр Моцарелла, шампиньоны, капуста брокколи, томат.",
-            "id": "fb05",
+            "id": "fb23",
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
+            "stars": 5,
             "price": 695
           },
           {
             "description": "Сливочный соус, соус манго-чили, сыр моцарелла, лук красный, перец болгарский, ломтики лосося, салат Айсберг",
-            "id": "fb06",
+            "id": "fb24",
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
+            "stars": 5,
             "price": 875
           }
         ]
@@ -197,44 +220,50 @@
         "data": [
           {
             "description": "Пицца, соус, сыр Моцарелла, томат, куриное филе, пепперони, свинина, бекон",
-            "id": "fb01",
+            "id": "fb24",
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
+            "stars": 4,
             "price": 685
           },
           {
             "description": "Пицца соус, сыр Моцарелла, томат",
-            "id": "fb02",
+            "id": "fb26",
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
+            "stars": 5,
             "price": 693
           },
           {
             "description": "Пицца соус, пепперони, сыр Моцарелла",
-            "id": "fb03",
+            "id": "fb27",
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
+            "stars": 3,
             "price": 595
           },
           {
             "description": "Сыр моцарелла, сыр эмменталь, соус сырный, сыр горгондзола, сыр чеддер, сыр креметте, сыр фетакса, сыр пармезан",
-            "id": "fb04",
+            "id": "fb28",
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
+            "stars": 4,
             "price": 785
           },
           {
             "description": "Креветки, куриное филе, соус Том Ям, сыр Моцарелла, шампиньоны, капуста брокколи, томат.",
-            "id": "fb05",
+            "id": "fb29",
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
+            "stars": 2,
             "price": 695
           },
           {
             "description": "Сливочный соус, соус манго-чили, сыр моцарелла, лук красный, перец болгарский, ломтики лосося, салат Айсберг",
-            "id": "fb06",
+            "id": "fb30",
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
+            "stars": 3,
             "price": 875
           }
         ]
@@ -244,44 +273,50 @@
         "data": [
           {
             "description": "Пицца, соус, сыр Моцарелла, томат, куриное филе, пепперони, свинина, бекон",
-            "id": "fb01",
+            "id": "fb31",
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
+            "stars": 5,
             "price": 685
           },
           {
             "description": "Пицца соус, сыр Моцарелла, томат",
-            "id": "fb02",
+            "id": "fb32",
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
+            "stars": 4,
             "price": 693
           },
           {
             "description": "Пицца соус, пепперони, сыр Моцарелла",
-            "id": "fb03",
+            "id": "fb33",
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
+            "stars": 2,
             "price": 595
           },
           {
             "description": "Сыр моцарелла, сыр эмменталь, соус сырный, сыр горгондзола, сыр чеддер, сыр креметте, сыр фетакса, сыр пармезан",
-            "id": "fb04",
+            "id": "fb34",
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
+            "stars": 3,
             "price": 785
           },
           {
             "description": "Креветки, куриное филе, соус Том Ям, сыр Моцарелла, шампиньоны, капуста брокколи, томат.",
-            "id": "fb05",
+            "id": "fb35",
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
+            "stars": 5,
             "price": 695
           },
           {
             "description": "Сливочный соус, соус манго-чили, сыр моцарелла, лук красный, перец болгарский, ломтики лосося, салат Айсберг",
-            "id": "fb06",
+            "id": "fb36",
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
+            "stars": 3,
             "price": 875
           }
         ]
@@ -291,44 +326,50 @@
         "data": [
           {
             "description": "Пицца, соус, сыр Моцарелла, томат, куриное филе, пепперони, свинина, бекон",
-            "id": "fb01",
+            "id": "fb37",
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
+            "stars": 3,
             "price": 685
           },
           {
             "description": "Пицца соус, сыр Моцарелла, томат",
-            "id": "fb02",
+            "id": "fb38",
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
+            "stars": 2,
             "price": 693
           },
           {
             "description": "Пицца соус, пепперони, сыр Моцарелла",
-            "id": "fb03",
+            "id": "fb39",
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
+            "stars": 2,
             "price": 595
           },
           {
             "description": "Сыр моцарелла, сыр эмменталь, соус сырный, сыр горгондзола, сыр чеддер, сыр креметте, сыр фетакса, сыр пармезан",
-            "id": "fb04",
+            "id": "fb40",
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
+            "stars": 4,
             "price": 785
           },
           {
             "description": "Креветки, куриное филе, соус Том Ям, сыр Моцарелла, шампиньоны, капуста брокколи, томат.",
-            "id": "fb05",
+            "id": "fb41",
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
+            "stars": 5,
             "price": 695
           },
           {
             "description": "Сливочный соус, соус манго-чили, сыр моцарелла, лук красный, перец болгарский, ломтики лосося, салат Айсберг",
-            "id": "fb06",
+            "id": "fb42",
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
+            "stars": 3,
             "price": 875
           }
         ]
@@ -338,44 +379,50 @@
         "data": [
           {
             "description": "Пицца, соус, сыр Моцарелла, томат, куриное филе, пепперони, свинина, бекон",
-            "id": "fb01",
+            "id": "fb43",
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
+            "stars": 5,
             "price": 685
           },
           {
             "description": "Пицца соус, сыр Моцарелла, томат",
-            "id": "fb02",
+            "id": "fb44",
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
+            "stars": 4,
             "price": 693
           },
           {
             "description": "Пицца соус, пепперони, сыр Моцарелла",
-            "id": "fb03",
+            "id": "fb45",
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
+            "stars": 4,
             "price": 595
           },
           {
             "description": "Сыр моцарелла, сыр эмменталь, соус сырный, сыр горгондзола, сыр чеддер, сыр креметте, сыр фетакса, сыр пармезан",
-            "id": "fb04",
+            "id": "fb46",
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
+            "stars": 5,
             "price": 785
           },
           {
             "description": "Креветки, куриное филе, соус Том Ям, сыр Моцарелла, шампиньоны, капуста брокколи, томат.",
-            "id": "fb05",
+            "id": "fb47",
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
+            "stars": 4,
             "price": 695
           },
           {
             "description": "Сливочный соус, соус манго-чили, сыр моцарелла, лук красный, перец болгарский, ломтики лосося, салат Айсберг",
-            "id": "fb06",
+            "id": "fb48",
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
+            "stars": 4,
             "price": 875
           }
         ]
@@ -385,44 +432,50 @@
         "data": [
           {
             "description": "Пицца, соус, сыр Моцарелла, томат, куриное филе, пепперони, свинина, бекон",
-            "id": "fb01",
+            "id": "fb49",
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
+            "stars": 2,
             "price": 685
           },
           {
             "description": "Пицца соус, сыр Моцарелла, томат",
-            "id": "fb02",
+            "id": "fb50",
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
+            "stars": 4,
             "price": 693
           },
           {
             "description": "Пицца соус, пепперони, сыр Моцарелла",
-            "id": "fb03",
+            "id": "fb51",
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
+            "stars": 4,
             "price": 595
           },
           {
             "description": "Сыр моцарелла, сыр эмменталь, соус сырный, сыр горгондзола, сыр чеддер, сыр креметте, сыр фетакса, сыр пармезан",
-            "id": "fb04",
+            "id": "fb52",
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
+            "stars": 5,
             "price": 785
           },
           {
             "description": "Креветки, куриное филе, соус Том Ям, сыр Моцарелла, шампиньоны, капуста брокколи, томат.",
-            "id": "fb05",
+            "id": "fb53",
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
+            "stars": 2,
             "price": 695
           },
           {
             "description": "Сливочный соус, соус манго-чили, сыр моцарелла, лук красный, перец болгарский, ломтики лосося, салат Айсберг",
-            "id": "fb06",
+            "id": "fb54",
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
+            "stars": 4,
             "price": 875
           }
         ]
@@ -432,44 +485,50 @@
         "data": [
           {
             "description": "Пицца, соус, сыр Моцарелла, томат, куриное филе, пепперони, свинина, бекон",
-            "id": "fb01",
+            "id": "fb55",
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
+            "stars": 3,
             "price": 685
           },
           {
             "description": "Пицца соус, сыр Моцарелла, томат",
-            "id": "fb02",
+            "id": "fb56",
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
+            "stars": 5,
             "price": 693
           },
           {
             "description": "Пицца соус, пепперони, сыр Моцарелла",
-            "id": "fb03",
+            "id": "fb57",
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
+            "stars": 2,
             "price": 595
           },
           {
             "description": "Сыр моцарелла, сыр эмменталь, соус сырный, сыр горгондзола, сыр чеддер, сыр креметте, сыр фетакса, сыр пармезан",
-            "id": "fb04",
+            "id": "fb58",
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
+            "stars": 3,
             "price": 785
           },
           {
             "description": "Креветки, куриное филе, соус Том Ям, сыр Моцарелла, шампиньоны, капуста брокколи, томат.",
-            "id": "fb05",
+            "id": "fb59",
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
+            "stars": 5,
             "price": 695
           },
           {
             "description": "Сливочный соус, соус манго-чили, сыр моцарелла, лук красный, перец болгарский, ломтики лосося, салат Айсберг",
-            "id": "fb06",
+            "id": "fb60",
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
+            "stars": 4,
             "price": 875
           }
         ]
@@ -479,44 +538,50 @@
         "data": [
           {
             "description": "Пицца, соус, сыр Моцарелла, томат, куриное филе, пепперони, свинина, бекон",
-            "id": "fb01",
+            "id": "fb61",
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
+            "stars": 5,
             "price": 685
           },
           {
             "description": "Пицца соус, сыр Моцарелла, томат",
-            "id": "fb02",
+            "id": "fb62",
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
+            "stars": 4,
             "price": 693
           },
           {
             "description": "Пицца соус, пепперони, сыр Моцарелла",
-            "id": "fb03",
+            "id": "fb63",
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
+            "stars": 3,
             "price": 595
           },
           {
             "description": "Сыр моцарелла, сыр эмменталь, соус сырный, сыр горгондзола, сыр чеддер, сыр креметте, сыр фетакса, сыр пармезан",
-            "id": "fb04",
+            "id": "fb64",
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
+            "stars": 1,
             "price": 785
           },
           {
             "description": "Креветки, куриное филе, соус Том Ям, сыр Моцарелла, шампиньоны, капуста брокколи, томат.",
-            "id": "fb05",
+            "id": "fb65",
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
+            "stars": 2,
             "price": 695
           },
           {
             "description": "Сливочный соус, соус манго-чили, сыр моцарелла, лук красный, перец болгарский, ломтики лосося, салат Айсберг",
-            "id": "fb06",
+            "id": "fb66",
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
+            "stars": 5,
             "price": 875
           }
         ]
@@ -529,36 +594,47 @@
       "id" : "tn01",
       "image": "items/Rectangle 23.png",
       "name" : "ФИЛАДЕЛЬФИЯ НИСУАЗ",
+      "stars": 5,
+      "oldPrice" : 600,
       "price" : 455
     }, {
       "description" : "Лосось копченый, курица копченая, омлет, огурец, авокадо, сыр, микс соусов, 6 шт.",
       "id" : "tn02",
       "image": "items/Rectangle 23.png",
       "name" : "ФИЛАДЕЛЬФИЯ СМОУК",
+      "stars": 4,
+      "oldPrice" : 600,
       "price" : 455
     }, {
       "description" : "Лосось, авокадо, огурец, сыр, омлет, тобико, микс соусов",
       "id" : "tn03",
       "image": "items/Rectangle 23.png",
       "name" : "ФИЛАДЕЛЬФИЯ ФРЕШ",
+      "stars": 4,
+      "oldPrice" : 600,
       "price" : 455
     }, {
       "description" : "Лосось, авокадо, краб-микс, сыр, соус «Ажи-маракуйя», тобико, кунжут, 6 шт.",
       "id" : "tn04",
       "image": "items/Rectangle 23.png",
       "name" : "КАЛИФОРНИЯ АЖИ",
+      "stars": 2,
+      "oldPrice" : 600,
       "price" : 455
     }, {
       "description" : "Креветка, краб-микс, сыр, тобико, микс соусов, кунжут, 6 шт.",
       "id" : "tn05",
       "image": "items/Rectangle 23.png",
       "name" : "КАЛИФОРНИЯ БЛЭК",
+      "stars": 5,
+      "oldPrice" : 600,
       "price" : 455
     }, {
       "description" : "Креветка, снежный краб, гуакамоле, сыр, огурец, микс соусов, тобико, кунжут, 6 шт.",
       "id" : "tn06",
       "image": "items/Rectangle 23.png",
       "name" : "ТАНУКИ",
+      "stars": 3,
       "newPrice" : 455,
       "oldPrice" : 600
     } ]
