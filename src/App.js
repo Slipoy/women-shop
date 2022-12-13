@@ -8,6 +8,7 @@ import Footer from "./components/footer/footer";
 import CatalogPage from "./components/Catalog/Catalog";
 import ItemPage from "./components/itemPage/itemPage";
 import Basket from "./components/Basket/basket";
+import Favorites from "./components/ favorites/favorites";
 
 
 
@@ -19,9 +20,10 @@ function App() {
                   <Routes>
                       <Route path='women-shop/' element={<HomePage/>}/>
                       <Route path="women-shop/catalog/:products/" element={<CatalogPage/>}/>
-                      <Route path="women-shop/catalog/:products/:subcategory/*" element={<CatalogPage/>}/>
+                      {/*<Route path="women-shop/catalog/:products/:subcategory/*" element={<CatalogPage/>}/>*/}
                       <Route path='women-shop/product/:itemId' element={<ItemPage/>}/>
                       <Route path='women-shop/basket' element={<Basket/>}/>
+                      <Route path='women-shop/favorites' element={<Favorites/>}/>
                   </Routes>
               </main>
               <Routes>

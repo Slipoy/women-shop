@@ -1,44 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30bd3980-b510-44fc-910b-a57a6dcca363" name="Changes" comment="test">
+    <list default="true" id="30bd3980-b510-44fc-910b-a57a6dcca363" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/internet-shop" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/basketReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/basket/Arrow 10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/basket/basketTrue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ favorites/favorites.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ favorites/favorites.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ favorites/favorites.module.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ favorites/favorites.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FilterList/filterList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/portal/portal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataBD.json" beforeDir="false" afterPath="$PROJECT_DIR$/dataBD.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/catalog-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/catalog-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ Questions/questions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ Questions/questions.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ Questions/questions.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ Questions/questions.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ Questions/questions.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ Questions/questions.module.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ Questions/questions.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ Questions/questions.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Basket/basket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Basket/basket.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Basket/basket.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Basket/basket.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Basket/basket.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Basket/basket.module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Basket/basket.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Basket/basket.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Catalog/Catalog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalog/Catalog.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Catalog/catalog1.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalog/catalog1.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Catalog/catalog1.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalog/catalog1.module.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Catalog/catalog1.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalog/catalog1.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomePage/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/HomePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomePage/homePage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/homePage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomePage/homePage.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/homePage.module.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomePage/homePage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/homePage.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/header.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/itemCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/itemCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/items.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/items.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/items.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/items.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/items.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/items.module.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/items.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/items.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/items/Rectangle 23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/items/Rectangle 24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/items/Rectangle 25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/items/Rectangle 26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/items/Rectangle 27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/items/Rectangle 28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Reviews/reviews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reviews/reviews.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Reviews/reviews.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reviews/reviews.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Reviews/reviews.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reviews/reviews.module.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Reviews/reviews.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reviews/reviews.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/baner/Baner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/baner/Baner.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/baner/baner.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/baner/baner.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/baner/baner.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/baner/baner.module.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/baner/baner.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/baner/baner.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/catalogMenu/catalogMenuItem/catalogmenuItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/catalogMenu/catalogMenuItem/catalogmenuItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Stock/stock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Stock/stock.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/itemPage/itemPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/itemPage/itemPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/itemPage/itemPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/itemPage/itemPage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/itemPage/itemPage.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/itemPage/itemPage.module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/itemPage/itemPage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/itemPage/itemPage.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,16 +75,17 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "watcher.settings",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/basket" />
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/assets/star" />
       <recent name="$PROJECT_DIR$/src/assets/header" />
       <recent name="$PROJECT_DIR$/src/components/ItemsTest/items" />
-      <recent name="C:\Users\user\WebstormProjects\women-shop\src\components\ItemsTest" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/ItemsTest/items" />
@@ -137,7 +137,9 @@
       <workItem from="1670418366614" duration="66000" />
       <workItem from="1670421789561" duration="5645000" />
       <workItem from="1670489462083" duration="11605000" />
-      <workItem from="1670576336936" duration="8561000" />
+      <workItem from="1670576336936" duration="11332000" />
+      <workItem from="1670594780748" duration="1687000" />
+      <workItem from="1670833417584" duration="31428000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1669830340239</created>
@@ -167,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669987931955</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="creating basket">
+      <created>1670589109234</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670589109234</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +195,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="creating basket" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating basket" />
   </component>
 </project>

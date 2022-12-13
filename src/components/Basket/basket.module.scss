@@ -1,141 +1,187 @@
-.sectionBasket{
-padding-top: 150px;
-  //display: flex;
-  //flex-direction: column;
+.modalBasket{
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
-  .basketHeader{
-    display: flex;
-    h2{
-      margin-bottom: 50px;
-    }
-    img{
-      margin-left: 15px;
-      width: 26px;
-      height: 30px;
-    }
-  }
-  .basketBody{
-    height: 165px;
-    margin-bottom: 50px;
-    display: flex;
-    .itemImg{
-      width: 178px;
-      height: 165px;
-      margin-right: 50px;
-      overflow: hidden;
-      img{
-        width: 100%;
-        filter: drop-shadow(0px 4px 10px rgba(81, 74, 126, 0.2));
-      }
-    }
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  display: flex;
+  .wrapperBasket{
+    width: 1440px;
+    //max-height: 90%;
+    margin:  auto;
+    background-color: #fffdf5;
 
-    .aboutItem{
-      margin-right: 150px;
-      .sizeItem{
-      }
-      .colorItem{
-        margin-right: 10px;
-      }
-      .counter{
-        margin-bottom: 30px;
-        margin-top: 30px;
-        .countItem{
-          font-weight: 400;
-          font-size: 20px;
-          color: #514a7e;
-          margin-right: 20px;
+    .sectionBasket{
+      margin: auto;
+      width: 1170px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      .basketHeader{
+        display: flex;
+        width: 22%;
+        justify-content: space-between;
+        align-items: baseline;
+        .BtnBack{
+          background-color: #514a7e;
+          border-radius: 100%;
+          border: none;
+          width: 43px;
+          height: 43px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          img {
+            margin: 0;
+          }
+
+        }
+        h2{
+          margin-bottom: 50px;
+
+        }
+        img{
+          width: 26px;
+          height: 30px;
         }
       }
-      .actionBtn{
-        span{
-          &:hover{
-            text-decoration: underline;
-            cursor: pointer;
+      .basketBody{
+        min-height: 170px;
+        max-height: calc(220px * 3);
+        margin-bottom:50px ;
+        overflow: scroll;
+        .basketItems{
+          height: 165px;
+          margin-bottom: 50px;
+          display: flex;
+          .itemImg{
+            width: 178px;
+            height: 165px;
+            margin-right: 50px;
+            overflow: hidden;
+            img{
+              width: 100%;
+              filter: drop-shadow(0px 4px 10px rgba(81, 74, 126, 0.2));
+            }
+          }
 
+          .aboutItem{
+            margin-right: 150px;
+            .sizeItem{
+            }
+            .colorItem{
+              margin-right: 10px;
+            }
+            .counter{
+              margin-bottom: 30px;
+              margin-top: 30px;
+              .countItem{
+                font-weight: 400;
+                font-size: 20px;
+                color: #514a7e;
+                margin-right: 20px;
+                &:hover{
+                  cursor: pointer;
+                }
+              }
+            }
+            .actionBtn{
+              span{
+                &:hover{
+                  text-decoration: underline;
+                  cursor: pointer;
+
+                }
+              }
+            }
+          }
+
+          span{
+            font-size: 14px;
+            font-weight: 300;
+            color: #7d7d7d;
+            margin-right: 20px;
+            img{
+              width: 17px;
+              height: 16px;
+              margin:0;
+            }
+          }
+          .priceItem{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            a{
+              text-decoration: none;
+              color: #514a7e;
+              img {
+                width: auto;
+                height: auto;
+              }
+              &:hover{
+                cursor: pointer;
+                text-decoration: underline;
+              }
+            }
+            .price{
+              font-size: 40px;
+              font-weight: 400;
+              color: #514a7e;
+            }
           }
         }
       }
-    }
 
-    span{
-      font-size: 14px;
-      font-weight: 300;
-      color: #7d7d7d;
-      margin-right: 20px;
-      img{
-        width: 17px;
-        height: 16px;
-        margin:0;
-      }
-    }
-    .priceItem{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      a{
-        text-decoration: none;
-        color: #514a7e;
-        img {
-          width: auto;
-          height: auto;
+      .basketFooter{
+        .totalInfo{
+          display: flex;
+          align-items: baseline;
+          width: 35%;
+          margin-bottom: 10px;
+          .totalPrice{
+            font-size: 40px;
+            font-weight: 400;
+            color: #514a7e;
+            margin-right: 50px;
+          }
+          .totalCount{
+            font-size: 14px;
+            font-weight: 300;
+            color: #7d7d7d;
+          }
+
         }
-        &:hover{
-          cursor: pointer;
-          text-decoration: underline;
+        .order{
+          display: flex;
+          flex-direction: column;
+          form{
+            display: flex;
+            align-items: center;
+            input{
+              zoom: 0.8;
+            }
+          }
+          label{
+            font-weight: 300;
+            font-size: 12px;
+            color: #7d7d7d;
+          }
         }
+
       }
-      .price{
-        font-size: 40px;
+      p{
+        font-size: 20px;
         font-weight: 400;
-        color: #514a7e;
+        color: #121212;
+        margin-bottom: 20px;
+
       }
     }
   }
-  .basketFooter{
-    .totalInfo{
-      display: flex;
-      align-items: baseline;
-      width: 35%;
-      margin-bottom: 50px;
-      .totalPrice{
-        font-size: 40px;
-        font-weight: 400;
-        color: #514a7e;
-        margin-right: 50px;
-      }
-      .totalCount{
-        font-size: 14px;
-        font-weight: 300;
-        color: #7d7d7d;
-      }
 
-    }
-    .order{
-      display: flex;
-      flex-direction: column;
-      form{
-        display: flex;
-        align-items: center;
-        input{
-          zoom: 0.8;
-        }
-      }
-      label{
-        font-weight: 300;
-        font-size: 12px;
-        color: #7d7d7d;
-      }
-    }
-
-  }
-  p{
-    font-size: 20px;
-    font-weight: 400;
-    color: #121212;
-    margin-bottom: 20px;
-
-  }
 }
+
 .orderBtn{
   width: 148px;
   height: 37px;

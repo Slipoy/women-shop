@@ -1,21 +1,23 @@
 import React, {useEffect, useState} from "react";
 import style from "./items.module.css";
-
 import styleHeader from "../Header/header.module.css";
 import favritesLogo from "../../assets/header/favorites.png";
 import basketLogo from "../../assets/header/basket.png";
 import {compose} from "redux";
 import {connect} from "react-redux";
-import {setAllDataCatalog} from "../../Redux/catalog-reducer";
+import {setAllDataCatalog, updateBasketStatus} from "../../Redux/catalog-reducer";
+
 import {withRouter} from "../../HOk/withRouter";
 import star from    '../../assets/star/Vector (1).png'
 import {NavLink} from "react-router-dom";
+import {addToBasket, deleteToBasket} from "../../Redux/basketReducer";
+import basketTrue from "../../assets/basket/basketTrue.png"
 
 
 
 
 
-const ItemCard = ({price,description, image, stars, subcategory,products, id,oldPrice})=>{
+const ItemCard = ({price,description, image, stars,name, isBasket,addToBasket, id,oldPrice,setTEst, updateBasketStatus,deleteToBasket})=>{
     const src = require(`./${image}`)
     const initStars = (count)=>{
         let starsArray = []
@@ -25,6 +27,23 @@ const ItemCard = ({price,description, image, stars, subcategory,products, id,old
         return  starsArray
     }
 
+    const addBasket = (id, price, name)=>{
+
+        const data = {
+            name: name,
+            price: price,
+            id: id,
+            count: 1
+        }
+        addToBasket(data)
+        updateBasketStatus(id)
+
+
+    }
+    const handleDeleteBasket = (id)=>{
+        updateBasketStatus(id)
+        deleteToBasket(id)
+    }
     return(
         <div className={style.item}>
             <div className={style.imgItem}>
@@ -38,8 +57,10 @@ const ItemCard = ({price,description, image, stars, subcategory,products, id,old
             <div className={style.itemBody}>
                 <p className={style.description}>{description}</p>
                 <div className={style.divBtn}>
-                    <button className={styleHeader.basketBtn}><img src={favritesLogo} alt=""/></button>
-                    <button className={styleHeader.basketBtn}><img src={basketLogo} alt=""/></button>
+                    <button  className={styleHeader.basketBtn}><img src={favritesLogo} alt=""/></button>
+                    {!isBasket ? <button onClick={()=> addBasket(id,price,name)} className={styleHeader.basketBtn}><img src={basketLogo} alt=""/></button> :
+                        <button onClick={()=>handleDeleteBasket(id)} className={styleHeader.isBasketBtn}><img src={basketLogo} alt=""/></button>}
+
                 </div>
 
             </div >
@@ -64,7 +85,9 @@ let mapStateToProps = (state)=>{
     return{
         allData: state.catalogItems.women.allData,
         productsCategory:state.catalogItems.women.products,
-        stock: state.catalogItems.stock
+        stock: state.catalogItems.stock,
+        basket:state.initBasket.basket,
+        currentData: state.catalogItems.currentData
     }
 }
-export default compose(connect(mapStateToProps, {setAllDataCatalog}),withRouter) (ItemCard)
+export default compose(connect(mapStateToProps, {setAllDataCatalog,addToBasket,updateBasketStatus,deleteToBasket}),withRouter) (ItemCard)

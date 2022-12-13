@@ -12,6 +12,8 @@
           "image": "items/Rectangle 23.png",
           "name": "Мясная",
           "stars": 5,
+          "isBasket": false,
+          "path": "mikey",
           "price": 685
         },
         {
@@ -20,6 +22,8 @@
           "image": "items/Rectangle 24.png",
           "name": "Маргарита",
           "stars": 3,
+          "isBasket": false,
+          "path": "mikey",
           "price": 693
         },
         {
@@ -28,6 +32,8 @@
           "image": "items/Rectangle 25.png",
           "name": "Пепперони",
           "stars": 5,
+          "isBasket": false,
+          "path": "mikey",
           "price": 595
         },
         {
@@ -36,6 +42,8 @@
           "image": "items/Rectangle 26.png",
           "name": "Семь сыров",
           "stars": 3,
+          "isBasket": false,
+          "path": "mikey",
           "price": 785
         },
         {
@@ -44,6 +52,8 @@
           "image": "items/Rectangle 27.png",
           "name": "Том Ям",
           "stars": 4,
+          "isBasket": false,
+          "path": "mikey",
           "price": 695
         },
         {
@@ -52,6 +62,8 @@
           "image": "items/Rectangle 28.png",
           "name": "Норвежская",
           "stars": 2,
+          "isBasket": false,
+          "path": "mikey",
           "price": 875
         }
       ]
@@ -66,6 +78,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
             "stars": 3,
+            "isBasket": false,
+            "path": "suits",
             "price": 685
           },
           {
@@ -74,6 +88,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
             "stars": 4,
+            "isBasket": false,
+            "path": "suits",
             "price": 693
           },
           {
@@ -82,6 +98,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
             "stars": 3,
+            "isBasket": false,
+            "path": "suits",
             "price": 595
           },
           {
@@ -90,6 +108,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
             "stars": 5,
+            "isBasket": false,
+            "path": "suits",
             "price": 785
           },
           {
@@ -97,6 +117,8 @@
             "id": "fb11",
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
+            "isBasket": false,
+            "path": "suits",
             "price": 695
           },
           {
@@ -105,6 +127,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
             "stars": 5,
+            "isBasket": false,
+            "path": "suits",
             "price": 875
           }
         ]
@@ -118,6 +142,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
             "stars": 5,
+            "isBasket": false,
+            "path": "pants",
             "price": 685
           },
           {
@@ -126,6 +152,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
             "stars": 4,
+            "isBasket": false,
+            "path": "pants",
             "price": 693
           },
           {
@@ -134,6 +162,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
             "stars": 4,
+            "isBasket": false,
+            "path": "pants",
             "price": 595
           },
           {
@@ -142,6 +172,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
             "stars": 5,
+            "isBasket": false,
+            "path": "pants",
             "price": 785
           },
           {
@@ -150,6 +182,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
             "stars": 3,
+            "isBasket": false,
+            "path": "pants",
             "price": 695
           },
           {
@@ -158,6 +192,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
             "stars": 5,
+            "isBasket": false,
+            "path": "pants",
             "price": 875
           }
         ]
@@ -171,6 +207,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
             "stars": 3,
+            "isBasket": false,
+            "path":"jeans",
             "price": 685
           },
           {
@@ -179,6 +217,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
             "stars": 4,
+            "isBasket": false,
+            "path":"jeans",
             "price": 693
           },
           {
@@ -187,6 +227,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
             "stars": 2,
+            "isBasket": false,
+            "path":"jeans",
             "price": 595
           },
           {
@@ -195,6 +237,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
             "stars": 5,
+            "isBasket": false,
+            "path":"jeans",
             "price": 785
           },
           {
@@ -203,6 +247,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
             "stars": 5,
+            "isBasket": false,
+            "path":"jeans",
             "price": 695
           },
           {
@@ -211,6 +257,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
             "stars": 5,
+            "isBasket": false,
+            "path":"jeans",
             "price": 875
           }
         ]
@@ -224,6 +272,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
             "stars": 4,
+            "isBasket": false,
+            "path": "skirts",
             "price": 685
           },
           {
@@ -232,6 +282,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
             "stars": 5,
+            "isBasket": false,
+            "path": "skirts",
             "price": 693
           },
           {
@@ -240,6 +292,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
             "stars": 3,
+            "isBasket": false,
+            "path": "skirts",
             "price": 595
           },
           {
@@ -248,6 +302,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
             "stars": 4,
+            "isBasket": false,
+            "path": "skirts",
             "price": 785
           },
           {
@@ -256,6 +312,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
             "stars": 2,
+            "isBasket": false,
+            "path": "skirts",
             "price": 695
           },
           {
@@ -264,6 +322,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
             "stars": 3,
+            "isBasket": false,
+            "path": "skirts",
             "price": 875
           }
         ]
@@ -277,6 +337,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
             "stars": 5,
+            "isBasket": false,
+            "path": "shorts",
             "price": 685
           },
           {
@@ -285,6 +347,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
             "stars": 4,
+            "isBasket": false,
+            "path": "shorts",
             "price": 693
           },
           {
@@ -293,6 +357,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
             "stars": 2,
+            "isBasket": false,
+            "path": "shorts",
             "price": 595
           },
           {
@@ -301,6 +367,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
             "stars": 3,
+            "isBasket": false,
+            "path": "shorts",
             "price": 785
           },
           {
@@ -309,6 +377,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
             "stars": 5,
+            "isBasket": false,
+            "path": "shorts",
             "price": 695
           },
           {
@@ -317,6 +387,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
             "stars": 3,
+            "isBasket": false,
+            "path": "shorts",
             "price": 875
           }
         ]
@@ -330,6 +402,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
             "stars": 3,
+            "isBasket": false,
+            "path": "sweatshirtsHoodies",
             "price": 685
           },
           {
@@ -338,6 +412,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
             "stars": 2,
+            "isBasket": false,
+            "path": "sweatshirtsHoodies",
             "price": 693
           },
           {
@@ -346,6 +422,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
             "stars": 2,
+            "isBasket": false,
+            "path": "sweatshirtsHoodies",
             "price": 595
           },
           {
@@ -354,6 +432,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
             "stars": 4,
+            "isBasket": false,
+            "path": "sweatshirtsHoodies",
             "price": 785
           },
           {
@@ -362,6 +442,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
             "stars": 5,
+            "isBasket": false,
+            "path": "sweatshirtsHoodies",
             "price": 695
           },
           {
@@ -370,6 +452,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
             "stars": 3,
+            "isBasket": false,
+            "path": "sweatshirtsHoodies",
             "price": 875
           }
         ]
@@ -383,6 +467,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
             "stars": 5,
+            "isBasket": false,
+            "path": "blousesAndShirts",
             "price": 685
           },
           {
@@ -391,6 +477,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
             "stars": 4,
+            "isBasket": false,
+            "path": "blousesAndShirts",
             "price": 693
           },
           {
@@ -399,6 +487,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
             "stars": 4,
+            "isBasket": false,
+            "path": "blousesAndShirts",
             "price": 595
           },
           {
@@ -407,6 +497,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
             "stars": 5,
+            "isBasket": false,
+            "path": "blousesAndShirts",
             "price": 785
           },
           {
@@ -415,6 +507,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
             "stars": 4,
+            "isBasket": false,
+            "path": "blousesAndShirts",
             "price": 695
           },
           {
@@ -423,6 +517,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
             "stars": 4,
+            "isBasket": false,
+            "path": "blousesAndShirts",
             "price": 875
           }
         ]
@@ -436,6 +532,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
             "stars": 2,
+            "isBasket": false,
+            "path": "jackets",
             "price": 685
           },
           {
@@ -444,6 +542,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
             "stars": 4,
+            "isBasket": false,
+            "path": "jackets",
             "price": 693
           },
           {
@@ -452,6 +552,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
             "stars": 4,
+            "isBasket": false,
+            "path": "jackets",
             "price": 595
           },
           {
@@ -460,6 +562,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
             "stars": 5,
+            "isBasket": false,
+            "path": "jackets",
             "price": 785
           },
           {
@@ -468,6 +572,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
             "stars": 2,
+            "isBasket": false,
+            "path": "jackets",
             "price": 695
           },
           {
@@ -476,6 +582,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
             "stars": 4,
+            "isBasket": false,
+            "path": "jackets",
             "price": 875
           }
         ]
@@ -489,6 +597,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
             "stars": 3,
+            "isBasket": false,
+            "path": "dressesAndSundresses",
             "price": 685
           },
           {
@@ -497,6 +607,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
             "stars": 5,
+            "isBasket": false,
+            "path": "dressesAndSundresses",
             "price": 693
           },
           {
@@ -505,6 +617,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
             "stars": 2,
+            "isBasket": false,
+            "path": "dressesAndSundresses",
             "price": 595
           },
           {
@@ -513,6 +627,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
             "stars": 3,
+            "isBasket": false,
+            "path": "dressesAndSundresses",
             "price": 785
           },
           {
@@ -521,6 +637,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
             "stars": 5,
+            "isBasket": false,
+            "path": "dressesAndSundresses",
             "price": 695
           },
           {
@@ -529,6 +647,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
             "stars": 4,
+            "isBasket": false,
+            "path": "dressesAndSundresses",
             "price": 875
           }
         ]
@@ -542,6 +662,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Мясная",
             "stars": 5,
+            "isBasket": false,
+            "path": "outerwear",
             "price": 685
           },
           {
@@ -550,6 +672,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Маргарита",
             "stars": 4,
+            "isBasket": false,
+            "path": "outerwear",
             "price": 693
           },
           {
@@ -558,6 +682,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Пепперони",
             "stars": 3,
+            "isBasket": false,
+            "path": "outerwear",
             "price": 595
           },
           {
@@ -566,6 +692,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Семь сыров",
             "stars": 1,
+            "isBasket": false,
+            "path": "outerwear",
             "price": 785
           },
           {
@@ -574,6 +702,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Том Ям",
             "stars": 2,
+            "isBasket": false,
+            "path": "outerwear",
             "price": 695
           },
           {
@@ -582,6 +712,8 @@
             "image": "items/Rectangle 23.png",
             "name": "Норвежская",
             "stars": 5,
+            "isBasket": false,
+            "path": "outerwear",
             "price": 875
           }
         ]
@@ -595,6 +727,7 @@
       "image": "items/Rectangle 23.png",
       "name" : "ФИЛАДЕЛЬФИЯ НИСУАЗ",
       "stars": 5,
+      "isBasket": false,
       "oldPrice" : 600,
       "price" : 455
     }, {
@@ -603,6 +736,7 @@
       "image": "items/Rectangle 23.png",
       "name" : "ФИЛАДЕЛЬФИЯ СМОУК",
       "stars": 4,
+      "isBasket": false,
       "oldPrice" : 600,
       "price" : 455
     }, {
@@ -611,6 +745,7 @@
       "image": "items/Rectangle 23.png",
       "name" : "ФИЛАДЕЛЬФИЯ ФРЕШ",
       "stars": 4,
+      "isBasket": false,
       "oldPrice" : 600,
       "price" : 455
     }, {
@@ -619,6 +754,7 @@
       "image": "items/Rectangle 23.png",
       "name" : "КАЛИФОРНИЯ АЖИ",
       "stars": 2,
+      "isBasket": false,
       "oldPrice" : 600,
       "price" : 455
     }, {
@@ -627,6 +763,7 @@
       "image": "items/Rectangle 23.png",
       "name" : "КАЛИФОРНИЯ БЛЭК",
       "stars": 5,
+      "isBasket": false,
       "oldPrice" : 600,
       "price" : 455
     }, {
@@ -635,6 +772,7 @@
       "image": "items/Rectangle 23.png",
       "name" : "ТАНУКИ",
       "stars": 3,
+      "isBasket": false,
       "newPrice" : 455,
       "oldPrice" : 600
     } ]
@@ -647,6 +785,7 @@
       "products": ["Майки","Костюмы","Брюки","Джинсы", "Юбки","Шорты", "Свитшоты,худи","Блузки и рубашки","Пиджаки и жакеты","Платья и сарафаны", "Верхняя одежда" ],
       "time_of_delivery": 50,
       "stars": 4.5,
+      "isBasket": false,
       "price": 900,
       "kitchen": "Пицца",
       "image": "items/Rectangle 23.png"
@@ -656,6 +795,7 @@
       "path": "men",
       "time_of_delivery": 60,
       "stars": 4.3,
+      "isBasket": false,
       "price": 1200,
       "kitchen": "Суши, роллы",
       "image": "items/Rectangle 23.png",
@@ -665,6 +805,7 @@
       "name": "Детям",
       "time_of_delivery": 55,
       "stars": 4.1,
+      "isBasket": false,
       "price": 500,
       "kitchen": "Пицца",
       "image": "items/Rectangle 23.png",
@@ -674,6 +815,7 @@
       "name": "Обувь",
       "time_of_delivery": 75,
       "stars": 4.7,
+      "isBasket": false,
       "price": 1000,
       "kitchen": "Русская кухня",
       "image": "items/Rectangle 23.png",
@@ -683,6 +825,7 @@
       "name": "Игрушки",
       "time_of_delivery": 45,
       "stars": 4.6,
+      "isBasket": false,
       "price": 700,
       "kitchen": "Пицца",
       "image": "items/Rectangle 23.png",
@@ -692,6 +835,7 @@
       "name": "Аксессуары",
       "time_of_delivery": 45,
       "stars": 4.6,
+      "isBasket": false,
       "price": 700,
       "kitchen": "Пицца",
       "image": "items/Rectangle 23.png",
@@ -701,6 +845,7 @@
       "name": "Большие размеры",
       "time_of_delivery": 45,
       "stars": 4.6,
+      "isBasket": false,
       "price": 700,
       "kitchen": "Пицца",
       "image": "items/Rectangle 23.png",
@@ -710,6 +855,7 @@
       "name": "Дополнительно",
       "time_of_delivery": 45,
       "stars": 4.6,
+      "isBasket": false,
       "price": 700,
       "kitchen": "Пицца",
       "image": "items/Rectangle 23.png",
@@ -719,6 +865,7 @@
       "name": "Акции",
       "time_of_delivery": 45,
       "stars": 4.6,
+      "isBasket": false,
       "price": 700,
       "kitchen": "Пицца",
       "image": "items/Rectangle 23.png",

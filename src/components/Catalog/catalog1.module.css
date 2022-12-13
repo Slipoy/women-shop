@@ -27,8 +27,6 @@
   font-size: 20px;
 }
 .mainPageCatalog .sortBtn span {
-  font-size: 20px;
-  font-weight: 400;
   text-decoration: none;
 }
 .mainPageCatalog .sortBtn span:hover {
@@ -62,6 +60,11 @@
   justify-content: space-between;
   width: 10%;
   height: 500px;
+}
+.navigate .filterTitle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .linkNav {

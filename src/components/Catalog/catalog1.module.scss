@@ -25,8 +25,8 @@
       font-size: 20px;
     }
     span{
-      font-size: 20px;
-      font-weight: 400;
+      //font-size: 20px;
+      //font-weight: 400;
       text-decoration: none;
       &:hover{
         cursor: pointer;
@@ -61,6 +61,11 @@
   justify-content: space-between;
   width: 10%;
   height: 500px ;
+  .filterTitle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .linkNav{
   text-decoration: none;

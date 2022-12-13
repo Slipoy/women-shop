@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   width: 1170px;
 }
@@ -90,9 +91,42 @@ header .header .rightMenu .menuBtn {
   width: 16px;
   border: none;
   margin-left: 20px;
+  position: relative;
 }
 .basketBtn img {
   width: 100%;
+}
+
+.isBasketBtn {
+  background: none;
+  width: 16px;
+  border: none;
+  margin-left: 20px;
+  position: relative;
+}
+.isBasketBtn:after {
+  position: absolute;
+  content: "✓";
+  top: 3px;
+  left: 1px;
+  color: #514a7e;
+  width: 100%;
+  height: 100%;
+}
+.isBasketBtn img {
+  width: 100%;
+}
+
+.countBasket {
+  position: absolute;
+  display: inline-block;
+  bottom: -7px;
+  right: -6px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #514a7e;
+  color: #fffdf5;
 }
 
 /*# sourceMappingURL=header.module.css.map */

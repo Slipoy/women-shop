@@ -11,7 +11,7 @@ import firebase from "../../utils/fb-config";
 
 
 
-const Stock = ({stock,router,setCatalogItems})=>{
+const Stock = ({stock,router,setCatalogItems,currentData,test})=>{
     useEffect(() => {
         firebase
             .database()
@@ -48,7 +48,8 @@ let mapStateToProps = (state)=>{
     return{
         allData: state.catalogItems.women.allData,
         stock: state.catalogItems.stock.data,
-        testAllData: state.catalogItems.allData
+        testAllData: state.catalogItems.allData,
+        test:state.catalogItems.currentData
     }
 }
 export default compose(connect(mapStateToProps, {setAllDataCatalog,setCatalogItems}),withRouter) (Stock)

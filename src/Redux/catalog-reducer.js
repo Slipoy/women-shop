@@ -4,10 +4,12 @@ import React from "react";
 const INIT_STOCK = "INIT_STOCK"
 const INIT_CATALOG_NAMES = "INIT_CATALOG_NAMES"
 const INIT_ALL_DATA_CATALOG = "INIT_ALL_DATA"
-const TEST = "TEST"
+const INIT_CURRENT_DATA = "INIT_CURRENT_DATA"
 const SET_ITEMS_PAGE = "SET_ITEMS_PAGE"
 const SORT_BY_RATING = "SORT_BY_RATING"
 const SORT_BY_PRICE = 'SORT_BY_PRICE'
+const UPDATE_BASKET_STATUS = "UPDATE_BASKET_STATUS"
+
 
 
 
@@ -21,12 +23,14 @@ const initialState ={
         allData: []
     },
     allData: [],
-    itemsPerPage : 6
+    currentData : [],
+    itemsPerPage : 6,
 }
 
 const catalogReducer = (state = initialState, action)=>{
     switch (action.type){
         case INIT_STOCK:
+
             return{
                 ...state,
                 stock: action.data
@@ -40,7 +44,8 @@ const catalogReducer = (state = initialState, action)=>{
             const allData = action.data.products.map(item => item.data).flat(Infinity)
             return {
                 ...state,
-                women: {category: action.data.category, products: [...action.data.products], allData: [...allData]}
+                women: {category: action.data.category, products: [...action.data.products], allData: [...allData]},
+                currentData: allData
             }
         case SET_ITEMS_PAGE:
             const step = 6;
@@ -48,16 +53,30 @@ const catalogReducer = (state = initialState, action)=>{
             itemsPerPage: state.itemsPerPage + step}
         case SORT_BY_RATING:
             const sortDataRatingAll = action.data.sort((a,b)=> {return b.stars - a.stars})
-            action.dataCategory.forEach(item=> item.data.sort((a,b)=> {return b.stars - a.stars}))
             return {...state,
-                women: {...state.women, allData: [...sortDataRatingAll], products: [...action.dataCategory]}
+                currentData: [...sortDataRatingAll]
+
             }
         case SORT_BY_PRICE:
             const sortDataPriceALL = action.data.sort((a,b)=> {return b.price - a.price})
-            action.dataCategory.forEach(item=> item.data.sort((a,b)=> {return b.price - a.price}))
             return {...state,
-                women: {...state.women, allData: [...sortDataPriceALL], products: [...action.dataCategory]}
+                currentData: [...sortDataPriceALL]
             }
+        // case INIT_CURRENT_DATA:{
+        //     return {
+        //         ...state,
+        //         currentData: [...action.data]
+        //     }
+        // }
+        case UPDATE_BASKET_STATUS:{
+
+            return {
+                ...state,
+                currentData: state.currentData.map(item=> {if(item.id === action.id){
+                    return {...item, isBasket: !item.isBasket}
+                }else return  item})
+            }
+        }
 
 
         default: return state
@@ -83,23 +102,30 @@ export const setAllDataCatalog = (data)=>{
         data
     }
 }
-export const setTEst = ()=>{
-    return{
-        type: TEST,
-
-    }
-}
+// export const setTEst = (data)=>{
+//     return{
+//         type: INIT_CURRENT_DATA,
+//         data
+//
+//     }
+// }
 
 export const setItemsPerPage = () =>{
     return{
         type: SET_ITEMS_PAGE
     }
 }
-export const sortItem = (data, dataCategory, type) =>{
+export const sortItem = (data, type) =>{
     return{
         type,
         data,
-        dataCategory
     }
 }
+export const updateBasketStatus = (id)=>{
+    return{
+        type: UPDATE_BASKET_STATUS,
+        id
+    }
+}
+
 export default catalogReducer

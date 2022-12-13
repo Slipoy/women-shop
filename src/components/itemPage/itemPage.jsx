@@ -77,7 +77,7 @@ const ItemPage = ({router, subcategory, allData,setAllDataCatalog,stock})=>{
 
                     </div>
                     <div className={style.favoritesAndBasketBtn}>
-                        <button className={`${styleBtn.btnMore} ${style.basketBtn}`}>В корзину
+                        <button className={`${style.basketBtn}`}>В корзину
                             <span></span>
                         </button>
                         <svg className={style.favoritesBtn} width="34" height="31" viewBox="0 0 34 31"  xmlns="http://www.w3.org/2000/svg">

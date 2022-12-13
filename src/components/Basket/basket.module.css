@@ -1,120 +1,161 @@
-.sectionBasket {
-  padding-top: 150px;
+.modalBasket {
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
-}
-.sectionBasket .basketHeader {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
   display: flex;
 }
-.sectionBasket .basketHeader h2 {
+.modalBasket .wrapperBasket {
+  width: 1440px;
+  margin: auto;
+  background-color: #fffdf5;
+}
+.modalBasket .wrapperBasket .sectionBasket {
+  margin: auto;
+  width: 1170px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.modalBasket .wrapperBasket .sectionBasket .basketHeader {
+  display: flex;
+  width: 22%;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.modalBasket .wrapperBasket .sectionBasket .basketHeader .BtnBack {
+  background-color: #514a7e;
+  border-radius: 100%;
+  border: none;
+  width: 43px;
+  height: 43px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.modalBasket .wrapperBasket .sectionBasket .basketHeader .BtnBack img {
+  margin: 0;
+}
+.modalBasket .wrapperBasket .sectionBasket .basketHeader h2 {
   margin-bottom: 50px;
 }
-.sectionBasket .basketHeader img {
-  margin-left: 15px;
+.modalBasket .wrapperBasket .sectionBasket .basketHeader img {
   width: 26px;
   height: 30px;
 }
-.sectionBasket .basketBody {
+.modalBasket .wrapperBasket .sectionBasket .basketBody {
+  min-height: 170px;
+  max-height: 660px;
+  margin-bottom: 50px;
+  overflow: scroll;
+}
+.modalBasket .wrapperBasket .sectionBasket .basketBody .basketItems {
   height: 165px;
   margin-bottom: 50px;
   display: flex;
 }
-.sectionBasket .basketBody .itemImg {
+.modalBasket .wrapperBasket .sectionBasket .basketBody .basketItems .itemImg {
   width: 178px;
   height: 165px;
   margin-right: 50px;
   overflow: hidden;
 }
-.sectionBasket .basketBody .itemImg img {
+.modalBasket .wrapperBasket .sectionBasket .basketBody .basketItems .itemImg img {
   width: 100%;
   filter: drop-shadow(0px 4px 10px rgba(81, 74, 126, 0.2));
 }
-.sectionBasket .basketBody .aboutItem {
+.modalBasket .wrapperBasket .sectionBasket .basketBody .basketItems .aboutItem {
   margin-right: 150px;
 }
-.sectionBasket .basketBody .aboutItem .colorItem {
+.modalBasket .wrapperBasket .sectionBasket .basketBody .basketItems .aboutItem .colorItem {
   margin-right: 10px;
 }
-.sectionBasket .basketBody .aboutItem .counter {
+.modalBasket .wrapperBasket .sectionBasket .basketBody .basketItems .aboutItem .counter {
   margin-bottom: 30px;
   margin-top: 30px;
 }
-.sectionBasket .basketBody .aboutItem .counter .countItem {
+.modalBasket .wrapperBasket .sectionBasket .basketBody .basketItems .aboutItem .counter .countItem {
   font-weight: 400;
   font-size: 20px;
   color: #514a7e;
   margin-right: 20px;
 }
-.sectionBasket .basketBody .aboutItem .actionBtn span:hover {
+.modalBasket .wrapperBasket .sectionBasket .basketBody .basketItems .aboutItem .counter .countItem:hover {
+  cursor: pointer;
+}
+.modalBasket .wrapperBasket .sectionBasket .basketBody .basketItems .aboutItem .actionBtn span:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-.sectionBasket .basketBody span {
+.modalBasket .wrapperBasket .sectionBasket .basketBody .basketItems span {
   font-size: 14px;
   font-weight: 300;
   color: #7d7d7d;
   margin-right: 20px;
 }
-.sectionBasket .basketBody span img {
+.modalBasket .wrapperBasket .sectionBasket .basketBody .basketItems span img {
   width: 17px;
   height: 16px;
   margin: 0;
 }
-.sectionBasket .basketBody .priceItem {
+.modalBasket .wrapperBasket .sectionBasket .basketBody .basketItems .priceItem {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.sectionBasket .basketBody .priceItem a {
+.modalBasket .wrapperBasket .sectionBasket .basketBody .basketItems .priceItem a {
   text-decoration: none;
   color: #514a7e;
 }
-.sectionBasket .basketBody .priceItem a img {
+.modalBasket .wrapperBasket .sectionBasket .basketBody .basketItems .priceItem a img {
   width: auto;
   height: auto;
 }
-.sectionBasket .basketBody .priceItem a:hover {
+.modalBasket .wrapperBasket .sectionBasket .basketBody .basketItems .priceItem a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
-.sectionBasket .basketBody .priceItem .price {
+.modalBasket .wrapperBasket .sectionBasket .basketBody .basketItems .priceItem .price {
   font-size: 40px;
   font-weight: 400;
   color: #514a7e;
 }
-.sectionBasket .basketFooter .totalInfo {
+.modalBasket .wrapperBasket .sectionBasket .basketFooter .totalInfo {
   display: flex;
   align-items: baseline;
   width: 35%;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
-.sectionBasket .basketFooter .totalInfo .totalPrice {
+.modalBasket .wrapperBasket .sectionBasket .basketFooter .totalInfo .totalPrice {
   font-size: 40px;
   font-weight: 400;
   color: #514a7e;
   margin-right: 50px;
 }
-.sectionBasket .basketFooter .totalInfo .totalCount {
+.modalBasket .wrapperBasket .sectionBasket .basketFooter .totalInfo .totalCount {
   font-size: 14px;
   font-weight: 300;
   color: #7d7d7d;
 }
-.sectionBasket .basketFooter .order {
+.modalBasket .wrapperBasket .sectionBasket .basketFooter .order {
   display: flex;
   flex-direction: column;
 }
-.sectionBasket .basketFooter .order form {
+.modalBasket .wrapperBasket .sectionBasket .basketFooter .order form {
   display: flex;
   align-items: center;
 }
-.sectionBasket .basketFooter .order form input {
+.modalBasket .wrapperBasket .sectionBasket .basketFooter .order form input {
   zoom: 0.8;
 }
-.sectionBasket .basketFooter .order label {
+.modalBasket .wrapperBasket .sectionBasket .basketFooter .order label {
   font-weight: 300;
   font-size: 12px;
   color: #7d7d7d;
 }
-.sectionBasket p {
+.modalBasket .wrapperBasket .sectionBasket p {
   font-size: 20px;
   font-weight: 400;
   color: #121212;
