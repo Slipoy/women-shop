@@ -9,7 +9,7 @@ import Reviews from "../Reviews/reviews";
 import Questions from "../ Questions/questions";
 import Cooperation from "../cooperation/cooperation";
 import {connect} from "react-redux";
-import {setCatalogItems, setTEst} from "../../Redux/catalog-reducer";
+import {setAllDataCatalog, setCatalogItems, setTEst} from "../../Redux/catalog-reducer";
 import firebase from "../../utils/fb-config";
 import ItemCard from "../ItemsTest/itemCard";
 import Stock from "../Stock/stock";
@@ -20,15 +20,15 @@ import Footer from "../footer/footer";
 
 
 
-const HomePage = ({stock,setCatalogItems,setTEst,allData,testAllData})=>{
+const HomePage = ({stock,setCatalogItems,setTEst,allData,setAllDataCatalog})=>{
     useEffect(() => {
         firebase
             .database()
             .ref()
-            .child("stock")
+            .child("women")
             .once('value')
-            .then(data => setCatalogItems(data.val()))
-    },["stock"]);
+            .then(data => setAllDataCatalog(data.val()))
+    },["women"]);
     return(
         <>
             <Banner/>
@@ -62,4 +62,4 @@ let mapStateToProps = (state)=>{
         testAllData: state.catalogItems.allData
     }
 }
-export default connect(mapStateToProps, {setCatalogItems})(HomePage)
+export default connect(mapStateToProps, {setCatalogItems,setAllDataCatalog})(HomePage)

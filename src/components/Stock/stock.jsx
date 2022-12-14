@@ -13,13 +13,13 @@ import firebase from "../../utils/fb-config";
 
 const Stock = ({stock,router,setCatalogItems,currentData,test})=>{
     useEffect(() => {
-
+        if (!stock.length > 0)
         firebase
             .database()
             .ref()
             .child("stock")
             .once('value')
-            .then(data => (data.val()))
+            .then(data => setCatalogItems(data.val()))
     },["stock"]);
     const itemId = router.params.itemId
     const settings = {
@@ -29,6 +29,7 @@ const Stock = ({stock,router,setCatalogItems,currentData,test})=>{
         slidesToShow: 4,
         slidesToScroll: 1
     }
+    console.log(stock )
     return (
         <section className={style.stock}>
             {itemId ?  <h2>С этим товаром также покупают</h2>:<h2 className={style.stockHeader}>Успей купить!</h2>}
@@ -47,8 +48,7 @@ const Stock = ({stock,router,setCatalogItems,currentData,test})=>{
 let mapStateToProps = (state)=>{
     return{
         allData: state.catalogItems.women.allData,
-        ///тут была сток дата !!!
-        stock: state.catalogItems.stock.data,
+        stock: state.catalogItems.stock,
         testAllData: state.catalogItems.allData,
         test:state.catalogItems.currentData
     }

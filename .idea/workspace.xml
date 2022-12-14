@@ -1,34 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30bd3980-b510-44fc-910b-a57a6dcca363" name="Changes" comment="">
+    <list default="true" id="30bd3980-b510-44fc-910b-a57a6dcca363" name="Changes" comment="find falls in js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataBD.json" beforeDir="false" afterPath="$PROJECT_DIR$/dataBD.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newData.json" beforeDir="false" afterPath="$PROJECT_DIR$/newData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HOk/usePageData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/HOk/usePageData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/basketReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/basket.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/catalog-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/catalog-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ favorites/favorites.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ favorites/favorites.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ favorites/favorites.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ favorites/favorites.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ favorites/favorites.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ favorites/favorites.module.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ favorites/favorites.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ favorites/favorites.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Basket/basket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Basket/basket.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Basket/basket.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Basket/basket.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Basket/basket.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Basket/basket.module.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Basket/basket.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Basket/basket.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Catalog/Catalog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalog/Catalog.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.module.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomePage/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/HomePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomePage/homePage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/homePage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomePage/homePage.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/homePage.module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomePage/homePage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/homePage.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/itemCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/itemCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/items.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/items.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/items.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/items.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/items.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/items.module.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/items.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/items.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Stock/stock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Stock/stock.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/itemPage/itemPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/itemPage/itemPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/vadym/Desktop/women-shop/src/assets/header",
+    "last_opened_file_path": "C:/Users/user/WebstormProjects/women-shop",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,7 +70,7 @@
       <recent name="C:\Users\user\WebstormProjects\women-shop\src\components\Items\items" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.deploy">
     <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -106,8 +93,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>

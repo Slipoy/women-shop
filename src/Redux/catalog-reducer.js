@@ -35,10 +35,9 @@ const initialState ={
 const catalogReducer = (state = initialState, action)=>{
     switch (action.type){
         case INIT_STOCK:
-
             return{
                 ...state,
-                stock: action.data
+                stock: action.data.data
             }
         case INIT_CATALOG_NAMES:
             return {
@@ -51,7 +50,7 @@ const catalogReducer = (state = initialState, action)=>{
             return {
                 ...state,
                 women: {category: action.data.category, products: [...action.data.products], allData: [...allData]},
-                currentData: allData
+                currentData: allData,
             }
         case SET_ITEMS_PAGE:
             const step = 6;
@@ -72,6 +71,9 @@ const catalogReducer = (state = initialState, action)=>{
 
             return {
                 ...state,
+                stock: state.stock.map(item=> {if(item.id === action.id){
+                    return {...item, isBasket: !item.isBasket}
+                }else return  item}),
                 favorites: state.favorites.map(item=> {if(item.id === action.id){
                     return {...item, isBasket: !item.isBasket}
                 }else return  item}),
@@ -90,6 +92,9 @@ const catalogReducer = (state = initialState, action)=>{
         case UPDATE_FAV_STATUS:
             return {
                 ...state,
+                stock: state.stock.map(item=> {if(item.id === action.id){
+                    return {...item, isFavorites: !item.isFavorites}
+                }else return  item}),
                 favorites: state.favorites.map(item=> {if(item.id === action.id){
                     return {...item, isFavorites: !item.isFavorites}
                 }else return  item}),

@@ -16,6 +16,7 @@ const CatalogPage = ({setAllDataCatalog, productsCategory,allData,sortItem,mainC
     // const subCategory = id && productsCategory.filter(item => item.path === id).map(item => item.category)
     usePageData(products, setAllDataCatalog,currentData)
     const [filterData, setFilterData] = useState([])
+    //нужно сделать через общее состояниее
     const filterAdd = (value, checked)=>{
         if (!checked){
             setFilterData([...filterData, ...currentData.filter(item=> item.path === value).map(item=>item)])

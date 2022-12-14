@@ -18,13 +18,14 @@ import star from    '../../assets/star/Vector (1).png'
 import {NavLink} from "react-router-dom";
 import {addToBasket, deleteToBasket} from "../../Redux/basket";
 import basketTrue from "../../assets/basket/basketTrue.png"
+import stock from "../Stock/stock";
 
 
 
 
 
 const ItemCard = ({price,description, image, stars,name,isFavorites, isBasket,addToBasket,
-                      id,oldPrice,addToFavorites, updateBasketStatus,deleteToBasket,updateFavoritesStatus,deleteToFavorites})=>{
+                      id,oldPrice,addToFavorites, updateBasketStatus,deleteToBasket,updateFavoritesStatus,deleteToFavorites,stock})=>{
     const src = require(`./${image}`)
     const initStars = (count)=>{
         let starsArray = []
