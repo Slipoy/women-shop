@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/women-shop/static/css/main.706522c6.css",
-    "main.js": "/women-shop/static/js/main.0392c7d9.js",
+    "main.css": "/women-shop/static/css/main.e89d9cd5.css",
+    "main.js": "/women-shop/static/js/main.90a333b2.js",
     "static/media/Rectangle 26.png": "/women-shop/static/media/Rectangle 26.b28e407b589a64f8d942.png",
     "static/media/Rectangle 23.png": "/women-shop/static/media/Rectangle 23.29d73572abc22c8a2404.png",
     "static/media/Rectangle 28.png": "/women-shop/static/media/Rectangle 28.ffe651f5c121416b706d.png",
@@ -24,11 +24,11 @@
     "static/media/items.module.css.map": "/women-shop/static/media/items.module.css.346c1a428cb3744482b0.map",
     "static/media/Arrow 11.svg": "/women-shop/static/media/Arrow 11.8db3db6d7715cfa53501423ed0a49508.svg",
     "static/media/Arrow 10.svg": "/women-shop/static/media/Arrow 10.d860785a06044a07ea7883fab4aa3176.svg",
-    "main.706522c6.css.map": "/women-shop/static/css/main.706522c6.css.map",
-    "main.0392c7d9.js.map": "/women-shop/static/js/main.0392c7d9.js.map"
+    "main.e89d9cd5.css.map": "/women-shop/static/css/main.e89d9cd5.css.map",
+    "main.90a333b2.js.map": "/women-shop/static/js/main.90a333b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.706522c6.css",
-    "static/js/main.0392c7d9.js"
+    "static/css/main.e89d9cd5.css",
+    "static/js/main.90a333b2.js"
   ]
 }
