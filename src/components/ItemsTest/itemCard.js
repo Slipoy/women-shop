@@ -65,14 +65,14 @@ const ItemCard = ({price,description, image, stars,name, isBasket,addToBasket, i
 
             </div >
             <div className={style.itemFooter}>
-                <a href={`/women-shop/product/${id}`}>
+                <NavLink to={`/women-shop/product/${id}`}>
                     <button className={style.btnMore}>Подробнее
                         <div className={style.arrowBtn}>
                             <div className={style.line}></div>
                             <div className={style.triangleRight}></div>
                         </div>
                     </button>
-                </a>
+                </NavLink>
 
                 <span className={style.grade}>{initStars(stars).map((item,index)=> <img key={index} src={star} alt=""/>)}</span>
             </div>
