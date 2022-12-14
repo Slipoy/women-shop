@@ -1,11 +1,47 @@
 .favoritesSection {
   padding-top: 150px;
 }
+.favoritesSection .bodyFavor {
+  display: flex;
+  justify-content: space-between;
+}
+.favoritesSection .bodyFavor .favorItems {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
 .favoritesSection .bodyFavor .navigateFavor {
-  width: 180px;
-  height: 275px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  width: 180px;
+  height: 275px;
+}
+.favoritesSection .bodyFavor .navigateFavor .liItem {
+  display: flex;
+}
+.favoritesSection .bodyFavor .navigateFavor .liItem:hover {
+  cursor: pointer;
+}
+.favoritesSection .bodyFavor .navigateFavor .liItem img {
+  height: 16px;
+  margin-right: 10px;
+}
+.favoritesSection .bodyFavor .navigateFavor .liItem p {
+  font-size: 12px;
+  color: #121212;
+}
+.favoritesSection .bodyFavor .navigateFavor .underLine {
+  position: relative;
+}
+.favoritesSection .bodyFavor .navigateFavor .underLine:after {
+  position: absolute;
+  content: "";
+  width: 180px;
+  border-bottom: 1px solid black;
+  bottom: -20px;
+  left: 1px;
+  color: #7d7d7d;
 }
 
 /*# sourceMappingURL=favorites.module.css.map */

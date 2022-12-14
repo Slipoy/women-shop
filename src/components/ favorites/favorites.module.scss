@@ -1,11 +1,47 @@
 .favoritesSection{
   padding-top: 150px;
 .bodyFavor{
+  display: flex;
+  justify-content: space-between;
+  .favorItems{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
   .navigateFavor{
-    width: 180px;
-    height: 275px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 180px;
+    height: 275px;
+    .liItem{
+      display: flex;
+      &:hover{
+        cursor: pointer;
+      }
+      img{
+        height: 16px;
+        margin-right: 10px;
+      }
+      p{
+        font-size: 12px;
+        color: #121212;
+      }
+    }
+    .underLine{
+      position: relative;
+      &:after{
+        position: absolute;
+        content: "";
+        width: 180px;
+        border-bottom: 1px solid black;
+        bottom: -20px;
+        left: 1px;
+        color: #7d7d7d;
+      }
+    }
+
   }
 }
 }

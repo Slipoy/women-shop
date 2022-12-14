@@ -8,10 +8,16 @@ import {withRouter} from "../../HOk/withRouter";
 import ItemCard from "../ItemsTest/itemCard";
 import basketLogo from "../../assets/basket/basketMain.png"
 import favoritesLogo from "../../assets/header/favoritesBig.png"
+import userData from "../../assets/favorites/userData.png"
+import bonusLogo from '../../assets/favorites/bonus2.png'
+import logoUser from "../../assets/header/user2.png"
+import outLogo from '../../assets/favorites/out.png'
 
 
 
-const Favorites = ({currentData})=>{
+const Favorites = ({currentData,favorites})=>{
+    console.log(favorites)
+
     return(
         <div className={style.favoritesSection}>
             <div className={style.headerFavorites}>
@@ -19,16 +25,16 @@ const Favorites = ({currentData})=>{
             </div>
             <div className={style.bodyFavor}>
                 <nav className={style.navigateFavor}>
-                    <div><img src={basketLogo} alt=""/>Корзина</div>
-                    <div><img src={favoritesLogo} alt=""/>Избранное</div>
-                    <div><img src="" alt=""/>Бонусы</div>
-                    <div><img src="" alt=""/>Личые данные</div>
-                    <div><img src="" alt=""/>Итория покупок</div>
-                    <div><img src="" alt=""/>Выйти</div>
+                    <div className={`${style.liItem}`}><img src={basketLogo} alt=""/><p>Корзина</p></div>
+                    <div className={`${style.liItem} ${style.underLine}`}><img src={favoritesLogo} alt=""/><p>Избранное</p></div>
+                    <div className={`${style.liItem}`}><img src={bonusLogo} alt=""/><p>Бонусы</p></div>
+                    <div className={style.liItem}><img src={logoUser} alt=""/><p>Личые данные</p></div>
+                    <div className={`${style.liItem} ${style.underLine}`}><img src={userData} alt=""/><p>Итория покупок</p></div>
+                    <div className={style.liItem}><img src={outLogo} alt=""/><p>Выйти</p></div>
 
                 </nav>
                 <div className={style.favorItems}>
-                    {currentData ? currentData.map((item, index)=> { return <ItemCard id={item.id}   key={index} {...item}/>}) : <div>pfuheprf</div>}
+                    {favorites ? favorites.map((item, index)=> { return <ItemCard id={item.id}   key={index} {...item}/>}) : <div>pfuheprf</div>}
                 </div>
             </div>
         </div>
@@ -36,11 +42,10 @@ const Favorites = ({currentData})=>{
 }
 let mapStateToProps = (state)=>{
     return{
-        allData: state.catalogItems.women.allData,
-        productsCategory:state.catalogItems.women.products,
         stock: state.catalogItems.stock,
         itemsPerPage: state.catalogItems.itemsPerPage,
-        currentData: state.catalogItems.currentData
+        currentData: state.catalogItems.currentData,
+        favorites: state.catalogItems.favorites
     }
 }
 export default compose(connect(mapStateToProps, {setAllDataCatalog,setItemsPerPage})) (Favorites)

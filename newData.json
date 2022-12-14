@@ -836,38 +836,38 @@
     "category": "Японская кухня",
     "data": [ {
       "description" : "Угорь, авокадо, сыр, тобико, соус «Нисуаз», кунжут, 6 шт.",
-      "id" : "tn01",
+      "id" : "tb01",
       "image": "items/Rectangle 23jpg",
       "name" : "ФИЛАДЕЛЬФИЯ НИСУАЗ",
       "price" : 455
     }, {
       "description" : "Лосось копченый, курица копченая, омлет, огурец, авокадо, сыр, микс соусов, 6 шт.",
-      "id" : "tn02",
-      "image": "items/Rectangle 23jpg",
+      "id" : "tb02",
+      "image": "items/Rectangle 24jpg",
       "name" : "ФИЛАДЕЛЬФИЯ СМОУК",
       "price" : 455
     }, {
       "description" : "Лосось, авокадо, огурец, сыр, омлет, тобико, микс соусов",
-      "id" : "tn03",
-      "image": "items/Rectangle 23jpg",
+      "id" : "tb03",
+      "image": "items/Rectangle 25jpg",
       "name" : "ФИЛАДЕЛЬФИЯ ФРЕШ",
       "price" : 455
     }, {
       "description" : "Лосось, авокадо, краб-микс, сыр, соус «Ажи-маракуйя», тобико, кунжут, 6 шт.",
-      "id" : "tn04",
-      "image": "items/Rectangle 23jpg",
+      "id" : "tb04",
+      "image": "items/Rectangle 26jpg",
       "name" : "КАЛИФОРНИЯ АЖИ",
       "price" : 455
     }, {
       "description" : "Креветка, краб-микс, сыр, тобико, микс соусов, кунжут, 6 шт.",
-      "id" : "tn05",
-      "image": "items/Rectangle 23jpg",
+      "id" : "tb05",
+      "image": "items/Rectangle 27jpg",
       "name" : "КАЛИФОРНИЯ БЛЭК",
       "price" : 455
     }, {
       "description" : "Креветка, снежный краб, гуакамоле, сыр, огурец, микс соусов, тобико, кунжут, 6 шт.",
-      "id" : "tn06",
-      "image": "items/Rectangle 23jpg",
+      "id" : "tb06",
+      "image": "items/Rectangle 28jpg",
       "name" : "ТАНУКИ",
       "newPrice" : 455,
       "oldPrice" : 600

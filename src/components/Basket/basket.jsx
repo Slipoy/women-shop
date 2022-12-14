@@ -13,7 +13,7 @@ import {withRouter} from "../../HOk/withRouter";
 import Portal from "../portal/portal";
 import Header from "../Header/Header";
 import btnArrowBack from "../../assets/basket/Arrow 10.svg"
-import {changeCounter, deleteToBasket} from "../../Redux/basketReducer";
+import {changeCounter, deleteToBasket} from "../../Redux/basket";
 
 
 

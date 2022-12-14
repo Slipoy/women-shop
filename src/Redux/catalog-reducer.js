@@ -10,11 +10,16 @@ const SORT_BY_RATING = "SORT_BY_RATING"
 const SORT_BY_PRICE = 'SORT_BY_PRICE'
 const UPDATE_BASKET_STATUS = "UPDATE_BASKET_STATUS"
 
+const ADD_TO_FAVORITES = "ADD_TO_FAVORITES"
+const UPDATE_FAV_STATUS = 'UPDATE_FAV_STATUS'
+const DELETE_FROM_FAVORITES = "DELETE_FROM_FAVORITES"
+
 
 
 
 const initialState ={
     stock : [],
+    favorites : [],
     category: [],
     women: {
         category: "",
@@ -42,6 +47,7 @@ const catalogReducer = (state = initialState, action)=>{
             }
         case INIT_ALL_DATA_CATALOG:
             const allData = action.data.products.map(item => item.data).flat(Infinity)
+            allData.forEach(item=> item.isFavorites = false)
             return {
                 ...state,
                 women: {category: action.data.category, products: [...action.data.products], allData: [...allData]},
@@ -62,21 +68,45 @@ const catalogReducer = (state = initialState, action)=>{
             return {...state,
                 currentData: [...sortDataPriceALL]
             }
-        // case INIT_CURRENT_DATA:{
-        //     return {
-        //         ...state,
-        //         currentData: [...action.data]
-        //     }
-        // }
         case UPDATE_BASKET_STATUS:{
 
             return {
                 ...state,
+                favorites: state.favorites.map(item=> {if(item.id === action.id){
+                    return {...item, isBasket: !item.isBasket}
+                }else return  item}),
                 currentData: state.currentData.map(item=> {if(item.id === action.id){
                     return {...item, isBasket: !item.isBasket}
                 }else return  item})
             }
         }
+
+        case ADD_TO_FAVORITES:
+            const favorData =  state.currentData.filter(item => item.id === action.id)
+            return {
+                ...state,
+                favorites: [...state.favorites, ...favorData]
+            }
+        case UPDATE_FAV_STATUS:
+            return {
+                ...state,
+                favorites: state.favorites.map(item=> {if(item.id === action.id){
+                    return {...item, isFavorites: !item.isFavorites}
+                }else return  item}),
+                currentData: state.currentData.map(item=> {if(item.id === action.id){
+                    return {...item, isFavorites: !item.isFavorites}
+                }else return  item})
+
+            }
+        case DELETE_FROM_FAVORITES:
+            return {
+                ...state,
+                favorites: state.favorites.filter(item => item.id !== action.id)
+            }
+
+
+
+
 
 
         default: return state
@@ -124,6 +154,24 @@ export const sortItem = (data, type) =>{
 export const updateBasketStatus = (id)=>{
     return{
         type: UPDATE_BASKET_STATUS,
+        id
+    }
+}
+export const addToFavorites =(id)=>{
+    return{
+        type: ADD_TO_FAVORITES,
+        id
+    }
+}
+export const updateFavoritesStatus = (id)=>{
+    return{
+        type: UPDATE_FAV_STATUS,
+        id
+    }
+}
+export const deleteToFavorites = (id)=>{
+    return{
+        type: DELETE_FROM_FAVORITES,
         id
     }
 }

@@ -99,10 +99,8 @@ header{
   border: none;
   margin-left: 20px;
   position: relative;
-
-
   img {
-    width: 100%;
+    width: 100%
   }
 }
 .isBasketBtn{
@@ -113,6 +111,9 @@ header{
   position: relative;
   //background-color: #514a7e;
   //border-radius: 50%;
+  img {
+    width: 100%
+  }
   &:after{
     position: absolute;
     content: "\2713";
@@ -125,9 +126,9 @@ header{
 
   }
 
-  img {
-    width: 100%;
-  }
+  //img {
+  //  width: 100%;
+  //}
 }
 .countBasket{
   position: absolute;

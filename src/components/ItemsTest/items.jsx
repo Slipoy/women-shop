@@ -15,7 +15,8 @@ import ItemCard from "./itemCard";
 
 
 
-const Items = ({products,itemsPerPage,setItemsPerPage,currentData,filterData})=>{
+const Items = ({products,itemsPerPage,setItemsPerPage,currentData,filterData,favorites})=>{
+    console.log(currentData)
     let showItems
     if (filterData.length === 0 || !filterData){
         showItems = currentData
@@ -39,7 +40,8 @@ let mapStateToProps = (state)=>{
         productsCategory:state.catalogItems.women.products,
         stock: state.catalogItems.stock,
         itemsPerPage: state.catalogItems.itemsPerPage,
-        currentData: state.catalogItems.currentData
+        currentData: state.catalogItems.currentData,
+        favorites: state.catalogItems.favorites
     }
 }
 export default compose(connect(mapStateToProps, {setAllDataCatalog,setItemsPerPage}),withRouter) (Items)

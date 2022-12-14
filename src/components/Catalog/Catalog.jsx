@@ -14,8 +14,7 @@ const CatalogPage = ({setAllDataCatalog, productsCategory,allData,sortItem,mainC
     const products = router.params.products
     // const id = router.params.subcategory
     // const subCategory = id && productsCategory.filter(item => item.path === id).map(item => item.category)
-
-    usePageData(products, setAllDataCatalog)
+    usePageData(products, setAllDataCatalog,currentData)
     const [filterData, setFilterData] = useState([])
     const filterAdd = (value, checked)=>{
         if (!checked){

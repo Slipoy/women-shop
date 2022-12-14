@@ -723,7 +723,7 @@
     "category": "Японская кухня",
     "data": [ {
       "description" : "Угорь, авокадо, сыр, тобико, соус «Нисуаз», кунжут, 6 шт.",
-      "id" : "tn01",
+      "id" : "fb01",
       "image": "items/Rectangle 23.png",
       "name" : "ФИЛАДЕЛЬФИЯ НИСУАЗ",
       "stars": 5,
@@ -732,8 +732,8 @@
       "price" : 455
     }, {
       "description" : "Лосось копченый, курица копченая, омлет, огурец, авокадо, сыр, микс соусов, 6 шт.",
-      "id" : "tn02",
-      "image": "items/Rectangle 23.png",
+      "id" : "fb02",
+      "image": "items/Rectangle 24.png",
       "name" : "ФИЛАДЕЛЬФИЯ СМОУК",
       "stars": 4,
       "isBasket": false,
@@ -741,8 +741,8 @@
       "price" : 455
     }, {
       "description" : "Лосось, авокадо, огурец, сыр, омлет, тобико, микс соусов",
-      "id" : "tn03",
-      "image": "items/Rectangle 23.png",
+      "id" : "fb03",
+      "image": "items/Rectangle 25.png",
       "name" : "ФИЛАДЕЛЬФИЯ ФРЕШ",
       "stars": 4,
       "isBasket": false,
@@ -750,8 +750,8 @@
       "price" : 455
     }, {
       "description" : "Лосось, авокадо, краб-микс, сыр, соус «Ажи-маракуйя», тобико, кунжут, 6 шт.",
-      "id" : "tn04",
-      "image": "items/Rectangle 23.png",
+      "id" : "fb04",
+      "image": "items/Rectangle 26.png",
       "name" : "КАЛИФОРНИЯ АЖИ",
       "stars": 2,
       "isBasket": false,
@@ -759,8 +759,8 @@
       "price" : 455
     }, {
       "description" : "Креветка, краб-микс, сыр, тобико, микс соусов, кунжут, 6 шт.",
-      "id" : "tn05",
-      "image": "items/Rectangle 23.png",
+      "id" : "fb05",
+      "image": "items/Rectangle 27.png",
       "name" : "КАЛИФОРНИЯ БЛЭК",
       "stars": 5,
       "isBasket": false,
@@ -768,8 +768,8 @@
       "price" : 455
     }, {
       "description" : "Креветка, снежный краб, гуакамоле, сыр, огурец, микс соусов, тобико, кунжут, 6 шт.",
-      "id" : "tn06",
-      "image": "items/Rectangle 23.png",
+      "id" : "fb06",
+      "image": "items/Rectangle 28.png",
       "name" : "ТАНУКИ",
       "stars": 3,
       "isBasket": false,

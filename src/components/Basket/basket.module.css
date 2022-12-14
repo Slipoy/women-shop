@@ -35,6 +35,9 @@
   justify-content: space-around;
   align-items: center;
 }
+.modalBasket .wrapperBasket .sectionBasket .basketHeader .BtnBack:hover {
+  cursor: pointer;
+}
 .modalBasket .wrapperBasket .sectionBasket .basketHeader .BtnBack img {
   margin: 0;
 }
@@ -47,7 +50,7 @@
 }
 .modalBasket .wrapperBasket .sectionBasket .basketBody {
   min-height: 170px;
-  max-height: 660px;
+  max-height: 570px;
   margin-bottom: 50px;
   overflow: scroll;
 }

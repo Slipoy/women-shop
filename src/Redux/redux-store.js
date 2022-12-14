@@ -1,11 +1,11 @@
 import {combineReducers, createStore} from "redux";
 import catalogReducer from './catalog-reducer'
-import basketReducer from "./basketReducer";
+import basket from "./basket";
 
 
 let reducer = combineReducers({
     catalogItems: catalogReducer,
-    initBasket: basketReducer
+    initBasket: basket
 
 })
 

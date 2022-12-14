@@ -3,12 +3,13 @@
 const ADD_TO_BASKET = "ADD_TO_BASKET"
 const DELETE_FROM_BASKET = "DELETE_FROM_BASKET"
 const CHANGE_COUNT = "CHANGE_COUNT"
-const DELETE_ITEM = "DELETE_ITEM"
+
+const ADD_TO_FAVORITES = "ADD_TO_FAVORITES"
 
 const initialState = {
     basket: []
 }
-const basketReducer =(state = initialState, action)=>{
+const basket =(state = initialState, action)=>{
     switch (action.type){
         case ADD_TO_BASKET:
             return {
@@ -33,6 +34,7 @@ const basketReducer =(state = initialState, action)=>{
                     return {...item, count: item.count - 1}
                 }else return item})
             }
+
         default: return state
     }
 }
@@ -58,4 +60,7 @@ export const changeCounter = (id,k,count)=>{
     }
 }
 
-export default basketReducer
+
+
+
+export default basket

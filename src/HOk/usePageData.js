@@ -4,15 +4,18 @@ import {setCatalogItems} from "../Redux/catalog-reducer";
 import {connect} from "react-redux";
 
 
-const usePageData = (fieldName, metod) => {
+const usePageData = (fieldName, metod, currentData) => {
     useEffect(() => {
-        firebase
-            .database()
-            .ref()
-            .child(fieldName)
-            .once('value')
-            .then(data => metod(data.val()))
-    },[fieldName])
+        if (!currentData.length > 0){
+            firebase
+                .database()
+                .ref()
+                .child(fieldName)
+                .once('value')
+                .then(data => metod(data.val()))
+        }
+
+    },[currentData])
 }
 
 export default usePageData ;

@@ -18,7 +18,7 @@ import {NavLink} from "react-router-dom";
 
 
 
-const ItemPage = ({router, subcategory, allData,setAllDataCatalog,stock})=>{
+const ItemPage = ({router, subcategory, allData,setAllDataCatalog,stock,currentData})=>{
     const itemId = router.params.itemId
 
     useEffect(() => {
@@ -28,9 +28,8 @@ const ItemPage = ({router, subcategory, allData,setAllDataCatalog,stock})=>{
             .child("women")
             .once('value')
             .then(data => setAllDataCatalog(data.val()))
-    },["stock"]);
-    let itemInfo = allData?.filter(item => item.id === itemId)
-    console.log(itemInfo)
+    },["women"]);
+    let itemInfo = currentData?.filter(item => item.id === itemId)
     const src = itemInfo.map(item => require(`../ItemsTest/${item.image}`))
     const initStars = (count)=>{
         let starsArray = []
@@ -114,6 +113,7 @@ let mapStateToProps = (state)=>{
         productsCategory:state.catalogItems.women.products,
         mainCategory: state.catalogItems.women.category,
         stock: state.catalogItems.stock,
+        currentData: state.catalogItems.currentData,
     }
 }
 
