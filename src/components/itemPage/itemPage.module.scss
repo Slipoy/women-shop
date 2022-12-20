@@ -28,17 +28,35 @@
  }
  .bodyItemPage{
   display: flex;
+  justify-content: space-between;
   width: 100%;
   .imagesItem{
    width: 50%;
-   img{
-    width: 500px;
+   .mainImg{
+    width: 575px;
     height: 572px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    img{
+     width: 100%;
+     height: 100%;
+    }
+   }
+
+   .imgColection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    img{
+     width: 130px;
+     height: 110px;
+
+    }
    }
   }
   .descriptionItem{
    text-align: start;
-   width: 50%;
+   width: 40%;
    .reviews{
     margin-bottom: 30px;
     .stars{
@@ -50,6 +68,11 @@
      width: 300px;
      display: flex;
      justify-content: space-between;
+     span{
+      &:hover{
+       cursor: pointer;
+      }
+     }
     }
    }
 
@@ -57,21 +80,23 @@
     display: flex;
     align-items: center;
     .favoritesBtn{
-     //background-image: url("../../assets/header/favoritesBig.png");
      width: 33px;
      height: 30px;
      display: inline-block;
      &:hover{
-      color: #514a7e;
+      cursor: pointer;
      }
 
     }
 
    }
    .sizeTitle{
-    .btnsSize{
+    .btnSize{
      margin-top: 20px;
      margin-bottom: 10px;
+     &:hover{
+      cursor: pointer;
+     }
      button{
       width: 30px;
       height: 30px;
@@ -81,11 +106,21 @@
       font-size:16px ;
       font-weight: 300;
       color: #514A7E;
+      &:hover{
+       cursor: pointer;
+      }
       span{
        font-size: 8px;
        color: #7D7D7D;
        display: block;
+
       }
+     }
+
+    }
+    .tableSize{
+     &:hover{
+      cursor: pointer;
      }
     }
 
@@ -161,5 +196,23 @@
   span{
    background-image: url(../../assets/header/basket.png) ;
   }
+ }
+}
+.isBasketBtn{
+ background-color: #fffdf5;
+ color: #121212;
+ span{
+  background-image: url(../../assets/header/basket.png) ;
+
+ }
+
+}
+.isFavorites{
+ width: 32px;
+ &:hover{
+  cursor: pointer;
+ }
+ img{
+  width: 100%;
  }
 }

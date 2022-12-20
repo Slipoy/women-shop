@@ -10,12 +10,17 @@ body{
     width: 1440px;
     margin: 0 auto;
     position: relative;
-    background: white;
+    background-color: white;
+    background-image: url("assets/header/Ellipse 2.png"),url("assets/header/Ellipse 2.png"), url("assets/header/Ellipse 2.png"),url("assets/header/Ellipse 5.png"),url("assets/header/Ellipse 2.png"),url("assets/header/Ellipse 50.png");
+    background-repeat: no-repeat;
+    background-position: right top 2900px, right top 3900px,right top 900px,right top 3800px, right bottom, right bottom;
+
 }
 main{
     width: 1170px;
     margin: 0 auto;
     position: relative;
+
 
 }
 .semicircle{
@@ -30,6 +35,18 @@ main{
 p{
     font-weight: 300;
     font-size: 14px;
-    line-height: 17px;
+    /*line-height: 17px;*/
     color: #7D7D7D;
 }
+/*@media  (max-width: 390px){*/
+/*    .App{*/
+/*        width: 390px;*/
+/*        height: 812px;*/
+/*        overflow: scroll;*/
+
+/*    }*/
+/*    main{*/
+/*        width: 100%;*/
+/*        margin: 0;*/
+/*    }*/
+/*}*/

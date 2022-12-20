@@ -1,5 +1,6 @@
 .favoritesSection{
   padding-top: 150px;
+  padding-bottom: 50px;
 .bodyFavor{
   display: flex;
   justify-content: space-between;
@@ -8,6 +9,22 @@
     display: flex;
     flex-wrap: wrap;
 
+    .haveDontItems{
+      font-size: 40px;
+    }
+  }
+  .windInfo{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    //background-image: url("../../assets/header/Ellipse 2.png");
+    //background-repeat: no-repeat;
+    //background-position: right bottom;
+    .haveDontItems{
+      font-size: 40px;
+    }
   }
   .navigateFavor{
     display: flex;
@@ -15,6 +32,25 @@
     justify-content: space-between;
     width: 180px;
     height: 275px;
+    .basketLi{
+      .titleBasket{
+        position: relative;
+        .countBasket{
+          position: absolute;
+          display: inline-block;
+          bottom: 1px;
+          right: -20px;
+          width: 15px;
+          height: 15px;
+          border-radius: 100%;
+          background-color: #514a7e;
+          color: #fffdf5;
+          text-align: center;
+        }
+      }
+
+    }
+
     .liItem{
       display: flex;
       &:hover{

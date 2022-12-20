@@ -4,30 +4,21 @@ import {NavLink, Routes,Route, useLocation, useParams} from "react-router-dom";
 import Items from "../ItemsTest/items";
 import usePageData from "../../HOk/usePageData";
 import {connect} from "react-redux";
-import {setAllDataCatalog, setCatalogItems, setItemsPerPage, sortItem} from "../../Redux/catalog-reducer";
+import {filterForData, setAllDataCatalog, setCatalogItems, setItemsPerPage, sortItem} from "../../Redux/catalog-reducer";
 import {compose} from "redux";
 import {withRouter} from "../../HOk/withRouter";
 
 import FilterList from "../FilterList/filterList";
 
-const CatalogPage = ({setAllDataCatalog, productsCategory,allData,sortItem,mainCategory, router,currentData})=>{
+const CatalogPage = ({setAllDataCatalog, productsCategory,filterForData,sortItem,mainCategory, router,currentData,filterData})=>{
     const products = router.params.products
-    // const id = router.params.subcategory
-    // const subCategory = id && productsCategory.filter(item => item.path === id).map(item => item.category)
     usePageData(products, setAllDataCatalog,currentData)
-    const [filterData, setFilterData] = useState([])
-    //нужно сделать через общее состояниее
-    const filterAdd = (value, checked)=>{
-        if (!checked){
-            setFilterData([...filterData, ...currentData.filter(item=> item.path === value).map(item=>item)])
-        }else setFilterData(filterData.filter(item=> item.path !== value))
-    }
+    console.log(currentData)
     return(
         <div className={style.mainPageCatalog}>
             <div className={style.pagePath}>
                 <NavLink className={style.path} to={'/women-shop'}>Главная</NavLink>
                 <NavLink className={style.path} to={"/women-shop/catalog/" + products}>/{mainCategory}</NavLink>
-                {/*{subCategory ? <span>/{subCategory}</span> : <span></span>}*/}
             </div>
             <h2>{mainCategory}</h2>
             <div className={style.sortBtn}>
@@ -39,7 +30,7 @@ const CatalogPage = ({setAllDataCatalog, productsCategory,allData,sortItem,mainC
 
                 <form className={style.navigate}>
                     {productsCategory ? productsCategory.map((item, index) => {
-                            return <FilterList  category={item.category} path={item.path} filterAdd={filterAdd}/>
+                            return <FilterList  category={item.category} path={item.path} filterForData={filterForData}/>
                         })
                         : <p>загрузка</p>}
                 </form>
@@ -59,7 +50,8 @@ let mapStateToProps = (state)=>{
         allData: state.catalogItems.women.allData,
         productsCategory:state.catalogItems.women.products,
         mainCategory: state.catalogItems.women.category,
-        currentData: state.catalogItems.currentData
+        currentData: state.catalogItems.currentData,
+        filterData:state.catalogItems.filterData,
     }
 }
-export default compose(connect(mapStateToProps, {setAllDataCatalog,setItemsPerPage,sortItem}),withRouter)(CatalogPage)
+export default compose(connect(mapStateToProps, {setAllDataCatalog,setItemsPerPage,sortItem,filterForData}),withRouter)(CatalogPage)

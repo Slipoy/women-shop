@@ -109,8 +109,7 @@ header{
   border: none;
   margin-left: 20px;
   position: relative;
-  //background-color: #514a7e;
-  //border-radius: 50%;
+
   img {
     width: 100%
   }
@@ -141,5 +140,19 @@ header{
   background-color: #514a7e;
   color: #fffdf5;
 }
+//@media (max-width: 390px) {
+//
+//  header{
+//    width: 100%;
+//    position: fixed;
+//    top: 682px;
+//    left: 0px;
+//    .header{
+//      width: 100%;
+//      background-color: #514a7e;
+//    }
+//  }
+//
+//}
 
 

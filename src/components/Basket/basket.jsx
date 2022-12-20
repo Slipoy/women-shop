@@ -8,7 +8,7 @@ import arrow from "../../assets/basket/Arrow 11.svg"
 import styleItemPage from '../itemPage/itemPage.module.css'
 import {compose} from "redux";
 import {connect} from "react-redux";
-import {setAllDataCatalog} from "../../Redux/catalog-reducer";
+import {setAllDataCatalog,updateBasketStatus} from "../../Redux/catalog-reducer";
 import {withRouter} from "../../HOk/withRouter";
 import Portal from "../portal/portal";
 import Header from "../Header/Header";
@@ -17,8 +17,12 @@ import {changeCounter, deleteToBasket} from "../../Redux/basket";
 
 
 
-const Basket =({basket,onClose,changeCounter,deleteToBasket})=>{
+const Basket =({basket,onClose,changeCounter,deleteToBasket,updateBasketStatus})=>{
     const totalPrice = basket?.reduce((prev, acc) => prev + acc.price * acc.count, 0);
+    const handleDeleteBasket = (id)=>{
+        updateBasketStatus(id)
+        deleteToBasket(id)
+    }
     return(
         <Portal>
             <div className={style.modalBasket}>
@@ -50,7 +54,7 @@ const Basket =({basket,onClose,changeCounter,deleteToBasket})=>{
 
                                         <div className={style.actionBtn}>
                                             <span><img src={heard} alt=""/> В избранное</span>
-                                            <span onClick={()=>deleteToBasket(item.id)} ><img src={deleteImg} alt=""/> удалить</span>
+                                            <span onClick={()=>handleDeleteBasket(item.id)} ><img src={deleteImg} alt=""/> удалить</span>
                                         </div>
                                     </div>
                                     <div className={style.priceItem}>
@@ -59,7 +63,7 @@ const Basket =({basket,onClose,changeCounter,deleteToBasket})=>{
                                         <a href="!#">Информация о доставке <img src={arrow} alt=""/></a>
                                     </div>
 
-                                </div>}): <div>нет товаров</div>
+                                </div>}): <p className={style.haveDontItems}>Вы еще не добавили товары в корзину</p>
                             }
                         </div>
 
@@ -92,4 +96,4 @@ let mapStateToProps = (state)=>{
         basket:state.initBasket.basket
     }
 }
-export default compose(connect(mapStateToProps, {setAllDataCatalog,changeCounter,deleteToBasket}),withRouter) (Basket)
+export default compose(connect(mapStateToProps, {setAllDataCatalog,changeCounter,deleteToBasket,updateBasketStatus}),withRouter) (Basket)

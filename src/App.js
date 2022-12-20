@@ -23,7 +23,7 @@ function App() {
                       {/*<Route path="women-shop/catalog/:products/:subcategory/*" element={<CatalogPage/>}/>*/}
                       <Route path='women-shop/product/:itemId' element={<ItemPage/>}/>
                       <Route path='women-shop/basket' element={<Basket/>}/>
-                      <Route path='women-shop/favorites' element={<Favorites/>}/>
+                      <Route path='women-shop/favorites/*' element={<Favorites/>}/>
                   </Routes>
               </main>
               <Routes>

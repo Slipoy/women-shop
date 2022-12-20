@@ -25,7 +25,9 @@ const Banner =()=>{
                         <section className={style.firstBan}>
                             <h1 className="promo-title">Добро пожаловать в <span className={style.nameShop}>Coctaile</span></h1>
                             <p className="promo-text">
-                                Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне. Время исследовать.</p>
+                                Экономим Ваше время!
+                                Предлагаем лучшие цены!
+                                Доставляем в кратчайшие сроки!</p>
                         </section>
 
                     <NavLink to={"catalog/women"} className={style.catalogBtn}>

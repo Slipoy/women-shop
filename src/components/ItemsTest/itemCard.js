@@ -17,15 +17,14 @@ import {withRouter} from "../../HOk/withRouter";
 import star from    '../../assets/star/Vector (1).png'
 import {NavLink} from "react-router-dom";
 import {addToBasket, deleteToBasket} from "../../Redux/basket";
-import basketTrue from "../../assets/basket/basketTrue.png"
-import stock from "../Stock/stock";
+
 
 
 
 
 
 const ItemCard = ({price,description, image, stars,name,isFavorites, isBasket,addToBasket,
-                      id,oldPrice,addToFavorites, updateBasketStatus,deleteToBasket,updateFavoritesStatus,deleteToFavorites,stock})=>{
+                      id,oldPrice,addToFavorites, updateBasketStatus,deleteToBasket,updateFavoritesStatus,deleteToFavorites})=>{
     const src = require(`./${image}`)
     const initStars = (count)=>{
         let starsArray = []
@@ -82,7 +81,7 @@ const ItemCard = ({price,description, image, stars,name,isFavorites, isBasket,ad
 
             </div >
             <div className={style.itemFooter}>
-                <NavLink to={`/women-shop/product/${id}`}>
+                <NavLink onClick={()=> window.scrollTo(0, 0)} to={`/women-shop/product/${id}`}>
                     <button className={style.btnMore}>Подробнее
                         <div className={style.arrowBtn}>
                             <div className={style.line}></div>
@@ -107,4 +106,12 @@ let mapStateToProps = (state)=>{
         currentData: state.catalogItems.currentData
     }
 }
-export default compose(connect(mapStateToProps, {setAllDataCatalog,addToBasket,updateBasketStatus,deleteToBasket,addToFavorites,updateFavoritesStatus,deleteToFavorites}),withRouter) (ItemCard)
+
+export default compose(connect(mapStateToProps, {setAllDataCatalog,
+    addToBasket,
+    updateBasketStatus,
+    deleteToBasket,
+    addToFavorites,
+    updateFavoritesStatus,
+    deleteToFavorites}
+    ),withRouter) (ItemCard)

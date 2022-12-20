@@ -4,7 +4,7 @@ import basketLogo from  '../../assets/header/basket.png';
 import favritesLogo from  '../../assets/header/favorites.png'
 import userLogo from '../../assets/header/icon.png'
 import searchLogo from "../../assets/header/icon-searcр.png"
-import heartFill from   '../../assets/header/fillHeart.jpeg'
+import heartFill from   '../../assets/header/heardFill.png'
 import logo from '../../assets/header/logo.png'
 import {connect} from "react-redux";
 import {setCatalogItems, setCategoryName} from "../../Redux/catalog-reducer";
@@ -12,6 +12,7 @@ import CatalogMenuItem from "../catalogMenu/catalogMenuItem/catalogmenuItem";
 import Basket from "../Basket/basket";
 import {Navigate, NavLink} from "react-router-dom";
 import favorites from "../ favorites/favorites";
+import LogIn from "../LogIn/login";
 
 
 
@@ -23,13 +24,17 @@ const Header = ({basket,favorites})=>{
     const handleBasketModal = ()=>{
         setIsBasketModal(!isBasketModal)
     }
+    const [isLogin, setIsLogin] = useState(false)
+    const handleLogInModal = ()=>{
+        setIsLogin(!isLogin)
+    }
     const toFavor =()=>{
         return <Navigate to='women-shop/favorites'/>
     }
 
     return (
         <header>
-            <div className={style.header}>
+            <div name={"header"} className={style.header}>
 
                 <div className={style.mainMenu}>
                     <button className={style.mainMenuBtn}>
@@ -38,7 +43,8 @@ const Header = ({basket,favorites})=>{
                         <span className={style.lineBtn}></span>
                     </button>
                     <div className={style.catalogMenu}>
-                        <img src={logo} alt=""/>
+                        <NavLink to={'/women-shop/'}><img src={logo} alt=""/></NavLink>
+
                         <div className={style.listItems}>
                             <CatalogMenuItem/>
                         </div>
@@ -51,7 +57,11 @@ const Header = ({basket,favorites})=>{
                         <input type="text" placeholder={"Поиск"}/>
                     </div>
                     <div className={style.menuBtn}>
-                        <button className={style.basketBtn}><img src={userLogo} alt=""/></button>
+                        {/*<button onClick={()=>handleLogInModal()} className={style.basketBtn}><NavLink to={"/women-shop/favorites/userData/"}>*/}
+                            <button className={style.basketBtn}><NavLink to={"/women-shop/favorites/userData/"}>
+                            <img src={userLogo} alt=""/>
+                        </NavLink>
+                            </button>
                         <button className={style.basketBtn}><NavLink to={"women-shop/favorites"}>
                             {favorites.length > 0 ? <img src={heartFill} alt=""/> : <img src={favritesLogo} alt=""/>}</NavLink></button>
                         <button onClick={()=>handleBasketModal()} className={style.basketBtn}>
@@ -63,6 +73,7 @@ const Header = ({basket,favorites})=>{
                 </div>
             </div>
             {isBasketModal && <Basket onClose={handleBasketModal}/>}
+            {/*{isLogin && <LogIn onClose={handleLogInModal}/>}*/}
         </header>
     )
 

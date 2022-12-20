@@ -1,5 +1,6 @@
 .favoritesSection {
   padding-top: 150px;
+  padding-bottom: 50px;
 }
 .favoritesSection .bodyFavor {
   display: flex;
@@ -10,12 +11,40 @@
   display: flex;
   flex-wrap: wrap;
 }
+.favoritesSection .bodyFavor .favorItems .haveDontItems {
+  font-size: 40px;
+}
+.favoritesSection .bodyFavor .windInfo {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.favoritesSection .bodyFavor .windInfo .haveDontItems {
+  font-size: 40px;
+}
 .favoritesSection .bodyFavor .navigateFavor {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 180px;
   height: 275px;
+}
+.favoritesSection .bodyFavor .navigateFavor .basketLi .titleBasket {
+  position: relative;
+}
+.favoritesSection .bodyFavor .navigateFavor .basketLi .titleBasket .countBasket {
+  position: absolute;
+  display: inline-block;
+  bottom: 1px;
+  right: -20px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #514a7e;
+  color: #fffdf5;
+  text-align: center;
 }
 .favoritesSection .bodyFavor .navigateFavor .liItem {
   display: flex;

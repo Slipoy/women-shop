@@ -19,9 +19,10 @@ const Items = ({products,itemsPerPage,setItemsPerPage,currentData,filterData,fav
     console.log(currentData)
     let showItems
     if (filterData.length === 0 || !filterData){
-        showItems = currentData
+        showItems = [...currentData]
     }else showItems = filterData
-    // const subcategory = router.params.subcategory
+
+
     const [currentPage, setCurrentPage] = useState(1)
     const lastItemIndex = currentPage * itemsPerPage
     const firstItemIndex = lastItemIndex - itemsPerPage

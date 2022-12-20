@@ -1,27 +1,24 @@
 import React, {useEffect} from "react";
 import Banner from "../baner/Baner";
 import style from   './homePage.module.css'
-import Items from "../ItemsTest/items";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Reviews from "../Reviews/reviews";
 import Questions from "../ Questions/questions";
 import Cooperation from "../cooperation/cooperation";
 import {connect} from "react-redux";
-import {setAllDataCatalog, setCatalogItems, setTEst} from "../../Redux/catalog-reducer";
+import {setAllDataCatalog, setCatalogItems} from "../../Redux/catalog-reducer";
 import firebase from "../../utils/fb-config";
-import ItemCard from "../ItemsTest/itemCard";
 import Stock from "../Stock/stock";
-import FormInvitation from "../FormInvitation/formInvitation";
-import Footer from "../footer/footer";
 
 
 
 
 
-const HomePage = ({stock,setCatalogItems,setTEst,allData,setAllDataCatalog})=>{
+
+const HomePage = ({stock,currentData,setAllDataCatalog})=>{
     useEffect(() => {
+        if(!currentData)
         firebase
             .database()
             .ref()
@@ -47,9 +44,6 @@ const HomePage = ({stock,setCatalogItems,setTEst,allData,setAllDataCatalog})=>{
             <Reviews/>
             <Questions/>
             <Cooperation/>
-            {/*<FormInvitation/>*/}
-            {/*<Footer/>*/}
-
         </>
 
 
@@ -59,7 +53,8 @@ let mapStateToProps = (state)=>{
     return{
         allData: state.catalogItems.women.allData,
         stock: state.catalogItems.stock,
-        testAllData: state.catalogItems.allData
+        testAllData: state.catalogItems.allData,
+        currentData: state.catalogItems.currentData,
     }
 }
 export default connect(mapStateToProps, {setCatalogItems,setAllDataCatalog})(HomePage)

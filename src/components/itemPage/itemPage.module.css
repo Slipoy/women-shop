@@ -28,18 +28,34 @@
 }
 .itemPage .bodyItemPage {
   display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 .itemPage .bodyItemPage .imagesItem {
   width: 50%;
 }
-.itemPage .bodyItemPage .imagesItem img {
-  width: 500px;
+.itemPage .bodyItemPage .imagesItem .mainImg {
+  width: 575px;
   height: 572px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.itemPage .bodyItemPage .imagesItem .mainImg img {
+  width: 100%;
+  height: 100%;
+}
+.itemPage .bodyItemPage .imagesItem .imgColection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.itemPage .bodyItemPage .imagesItem .imgColection img {
+  width: 130px;
+  height: 110px;
 }
 .itemPage .bodyItemPage .descriptionItem {
   text-align: start;
-  width: 50%;
+  width: 40%;
 }
 .itemPage .bodyItemPage .descriptionItem .reviews {
   margin-bottom: 30px;
@@ -52,6 +68,9 @@
   display: flex;
   justify-content: space-between;
 }
+.itemPage .bodyItemPage .descriptionItem .reviews .reviewsBtn span:hover {
+  cursor: pointer;
+}
 .itemPage .bodyItemPage .descriptionItem .favoritesAndBasketBtn {
   display: flex;
   align-items: center;
@@ -62,13 +81,16 @@
   display: inline-block;
 }
 .itemPage .bodyItemPage .descriptionItem .favoritesAndBasketBtn .favoritesBtn:hover {
-  color: #514a7e;
+  cursor: pointer;
 }
-.itemPage .bodyItemPage .descriptionItem .sizeTitle .btnsSize {
+.itemPage .bodyItemPage .descriptionItem .sizeTitle .btnSize {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.itemPage .bodyItemPage .descriptionItem .sizeTitle .btnsSize button {
+.itemPage .bodyItemPage .descriptionItem .sizeTitle .btnSize:hover {
+  cursor: pointer;
+}
+.itemPage .bodyItemPage .descriptionItem .sizeTitle .btnSize button {
   width: 30px;
   height: 30px;
   background: transparent;
@@ -78,10 +100,16 @@
   font-weight: 300;
   color: #514A7E;
 }
-.itemPage .bodyItemPage .descriptionItem .sizeTitle .btnsSize button span {
+.itemPage .bodyItemPage .descriptionItem .sizeTitle .btnSize button:hover {
+  cursor: pointer;
+}
+.itemPage .bodyItemPage .descriptionItem .sizeTitle .btnSize button span {
   font-size: 8px;
   color: #7D7D7D;
   display: block;
+}
+.itemPage .bodyItemPage .descriptionItem .sizeTitle .tableSize:hover {
+  cursor: pointer;
 }
 .itemPage .bodyItemPage .descriptionItem .upperLineText {
   color: #514A7E;
@@ -149,6 +177,24 @@
 }
 .basketBtn:hover span {
   background-image: url(../../assets/header/basket.png);
+}
+
+.isBasketBtn {
+  background-color: #fffdf5;
+  color: #121212;
+}
+.isBasketBtn span {
+  background-image: url(../../assets/header/basket.png);
+}
+
+.isFavorites {
+  width: 32px;
+}
+.isFavorites:hover {
+  cursor: pointer;
+}
+.isFavorites img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=itemPage.module.css.map */
