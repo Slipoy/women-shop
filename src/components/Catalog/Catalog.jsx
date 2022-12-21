@@ -9,9 +9,11 @@ import {compose} from "redux";
 import {withRouter} from "../../HOk/withRouter";
 
 import FilterList from "../FilterList/filterList";
+import {useAutoAnimate} from "@formkit/auto-animate/react";
 
 const CatalogPage = ({setAllDataCatalog, productsCategory,filterForData,sortItem,mainCategory, router,currentData,filterData})=>{
     const products = router.params.products
+    const [parent] = useAutoAnimate()
     usePageData(products, setAllDataCatalog,currentData)
     console.log(currentData)
     return(
@@ -34,8 +36,8 @@ const CatalogPage = ({setAllDataCatalog, productsCategory,filterForData,sortItem
                         })
                         : <p>загрузка</p>}
                 </form>
-                <div className={style.catalogItems}>
-                    <div className={style.items}>
+                <div  className={style.catalogItems}>
+                    <div ref={parent} className={style.items}>
                         <Items products={products} filterData={filterData}/>
                     </div>
                 </div>

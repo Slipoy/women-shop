@@ -6,36 +6,16 @@
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/catalog-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/catalog-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/baner/Rectangle 22 (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ favorites/favorites.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ favorites/favorites.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ favorites/favorites.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ favorites/favorites.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ favorites/favorites.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ favorites/favorites.module.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ favorites/favorites.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ favorites/favorites.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Basket/basket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Basket/basket.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Basket/basket.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Basket/basket.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Basket/basket.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Basket/basket.module.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Basket/basket.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Basket/basket.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Catalog/Catalog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalog/Catalog.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FilterList/filterList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilterList/filterList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.module.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomePage/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/HomePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/itemCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/itemCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemsTest/items.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsTest/items.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Reviews/reviews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reviews/reviews.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LogIn/login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LogIn/login.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ModalReviews/modalReviews.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ModalReviews/modalReviews.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Reviews/reviews.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reviews/reviews.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Reviews/reviews.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reviews/reviews.module.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Reviews/reviews.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reviews/reviews.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/baner/Baner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/baner/Baner.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/baner/baner.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/baner/baner.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/itemPage/itemPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/itemPage/itemPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TableSize/tableSazi.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TableSize/tableSazi.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/baner/baner.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/baner/baner.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/itemPage/itemPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/itemPage/itemPage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/itemPage/itemPage.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/itemPage/itemPage.module.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/itemPage/itemPage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/itemPage/itemPage.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/fb-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/fb-config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,21 +42,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/vadym/Desktop/women-shop/src/assets/header",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "watcher.settings",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/vadym/Desktop/women-shop/src/assets/header&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/header" />
